@@ -1,0 +1,5 @@
+package io.payrun.models;
+
+public enum SmpExclusionReason{
+None,ExceededMaximumKeepInTouchDays,InLegalCustody,HasDeceased,StillbirthBeforeWeek24,NothingToPay,AverageWeeklyEarningsBelowLelThreshold
+}

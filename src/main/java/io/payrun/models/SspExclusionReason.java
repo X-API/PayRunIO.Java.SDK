@@ -1,0 +1,5 @@
+package io.payrun.models;
+
+public enum SspExclusionReason{
+None,HasNeverWorked,BelowLel,NoWorkingWeekPattern,OnMaternity,Deceased,ContractEnd,LegalCustody,OnStrike,ExceededMaximumSspDuration,InsufficientHistoryToCalculateAwe,BelowMinimumDuration
+}
