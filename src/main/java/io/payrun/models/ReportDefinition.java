@@ -14,13 +14,6 @@ public class ReportDefinition
     @JsonProperty(value="Readonly")
     public Boolean readonly = false;
 
-    @JsonProperty(value="Definition")
-    public String definition;
-
     @JsonProperty(value="ReportQuery")
     public Query reportQuery;
-
-
-
-
 }

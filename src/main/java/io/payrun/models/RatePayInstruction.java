@@ -30,11 +30,4 @@ public class RatePayInstruction
 
     @JsonProperty(value="Units")
     public java.lang.Double units = Double.valueOf(0);;
-
-
-
-
-
-
-
 }

@@ -37,11 +37,6 @@ public class DpsJobInstruction
         this.messagesToProcess.instance = new java.util.ArrayList<>();
     }
 
-
-
-
-
-
     @com.fasterxml.jackson.annotation.JsonIgnore
     public java.util.ArrayList<DpsMessageType> getMessageTypes() {
         return this.messageTypes.instance;

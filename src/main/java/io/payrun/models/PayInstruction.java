@@ -18,7 +18,4 @@ public class PayInstruction
 
     @JsonProperty(value="Description")
     public String description;
-
-
-
 }

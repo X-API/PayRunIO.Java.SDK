@@ -55,17 +55,6 @@ public class SppPayInstruction
         this.workingDays.instance = new java.util.ArrayList<>();
     }
 
-
-
-
-
-
-
-
-
-
-
-
     @com.fasterxml.jackson.annotation.JsonIgnore
     public java.util.ArrayList<java.util.Date> getWorkingDays() {
         return this.workingDays.instance;

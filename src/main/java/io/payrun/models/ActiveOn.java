@@ -16,7 +16,4 @@ public class ActiveOn extends FilterBase
 
     @JsonProperty(value="@Value2")
     public String value2;
-
-
-
 }

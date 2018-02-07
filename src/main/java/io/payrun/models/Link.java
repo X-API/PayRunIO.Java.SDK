@@ -16,7 +16,4 @@ public class Link
 
     @JsonProperty(value="@rel")
     public String targetType;
-
-
-
 }

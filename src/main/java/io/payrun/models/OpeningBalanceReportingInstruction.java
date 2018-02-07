@@ -66,23 +66,4 @@ public class OpeningBalanceReportingInstruction
 
     @JsonProperty(value="AmountPaid")
     public java.lang.Double amountPaid = Double.valueOf(0);;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

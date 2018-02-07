@@ -22,9 +22,4 @@ public class ReportLineApprenticeshipLevy
 
     @JsonProperty(value="TaxMonth")
     public java.lang.Short taxMonth;
-
-
-
-
-
 }

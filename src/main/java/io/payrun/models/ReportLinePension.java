@@ -34,13 +34,4 @@ public class ReportLinePension
 
     @JsonProperty(value="Payment")
     public java.lang.Double payment = Double.valueOf(0);;
-
-
-
-
-
-
-
-
-
 }

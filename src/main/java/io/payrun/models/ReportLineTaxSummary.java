@@ -43,16 +43,4 @@ public class ReportLineTaxSummary
 
     @JsonProperty(value="StudentLoan")
     public java.lang.Double studentLoan = Double.valueOf(0);;
-
-
-
-
-
-
-
-
-
-
-
-
 }

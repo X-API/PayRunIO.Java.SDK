@@ -47,17 +47,4 @@ public class PayLineRate
 
     @JsonProperty(value="ProRataMethodApplied")
     public ProRataMethod proRataMethodApplied = ProRataMethod.NotSet;
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

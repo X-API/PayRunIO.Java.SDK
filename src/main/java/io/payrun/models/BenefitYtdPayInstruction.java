@@ -33,12 +33,4 @@ public class BenefitYtdPayInstruction
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;
-
-
-
-
-
-
-
-
 }

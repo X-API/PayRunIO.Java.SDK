@@ -27,10 +27,4 @@ public class StudentLoanYtdPayInstruction
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;
-
-
-
-
-
-
 }

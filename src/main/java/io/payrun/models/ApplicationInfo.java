@@ -19,8 +19,4 @@ public class ApplicationInfo
 
     @JsonProperty(value="ConsumerSecret")
     public String consumerSecret;
-
-
-
-
 }

@@ -10,5 +10,4 @@ public class Ascending extends OrderByBase
 
     @JsonProperty(value="@Property")
     public String property;
-
 }

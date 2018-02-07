@@ -58,18 +58,6 @@ public class SmpPayInstruction
         this.keepInTouchDays.instance = new java.util.ArrayList<>();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     @com.fasterxml.jackson.annotation.JsonIgnore
     public java.util.ArrayList<java.util.Date> getKeepInTouchDays() {
         return this.keepInTouchDays.instance;

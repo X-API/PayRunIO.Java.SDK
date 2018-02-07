@@ -10,5 +10,4 @@ public abstract class SingularOutputBase
 
     @JsonProperty(value="@Output")
     public OutputType output = OutputType.Element;
-
 }

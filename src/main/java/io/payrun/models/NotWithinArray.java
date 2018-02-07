@@ -13,6 +13,4 @@ public class NotWithinArray extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

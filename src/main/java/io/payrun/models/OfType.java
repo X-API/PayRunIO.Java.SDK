@@ -13,6 +13,4 @@ public class OfType extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

@@ -52,18 +52,4 @@ public class PayLineSpp
 
     @JsonProperty(value="ExclusionReason")
     public SppExclusionReason exclusionReason = SppExclusionReason.None;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -40,14 +40,4 @@ public class PayRun
 
     @JsonProperty(value="Sequence")
     public java.lang.Integer sequence;
-
-
-
-
-
-
-
-
-
-
 }

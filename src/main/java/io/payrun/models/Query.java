@@ -29,7 +29,6 @@ public class Query
         this.groups.instance = new java.util.ArrayList<>();
     }
 
-
     @com.fasterxml.jackson.annotation.JsonIgnore
     public java.util.ArrayList<NameValuePair> getVariables() {
         return this.variables.instance;

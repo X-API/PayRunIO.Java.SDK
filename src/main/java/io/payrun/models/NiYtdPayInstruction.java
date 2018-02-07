@@ -72,25 +72,4 @@ public class NiYtdPayInstruction
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -16,7 +16,4 @@ public class WhenNot extends CompareConditionBase
 
     @JsonProperty(value="@CaseSensitive")
     public Boolean caseSensitive = false;
-
-
-
 }

@@ -25,10 +25,4 @@ public abstract class AggregateOutputBase
 
     @JsonProperty(value="Filter")
     public java.util.ArrayList<FilterBase> filters;
-
-
-
-
-
-
 }

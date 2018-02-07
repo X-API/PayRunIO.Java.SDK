@@ -28,11 +28,4 @@ public class Sum extends AggregateOutputBase
 
     @JsonProperty(value="@DefaultValue")
     public String defaultValue;
-
-
-
-
-
-
-
 }

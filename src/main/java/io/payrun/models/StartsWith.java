@@ -13,6 +13,4 @@ public class StartsWith extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

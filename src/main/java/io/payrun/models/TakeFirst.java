@@ -13,6 +13,4 @@ public class TakeFirst extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

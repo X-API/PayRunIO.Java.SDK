@@ -33,12 +33,4 @@ public class TaxYtdPayInstruction
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;
-
-
-
-
-
-
-
-
 }

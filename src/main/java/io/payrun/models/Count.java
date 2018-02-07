@@ -25,10 +25,4 @@ public class Count extends AggregateOutputBase
 
     @JsonProperty(value="Filter")
     public java.util.ArrayList<FilterBase> filters;
-
-
-
-
-
-
 }

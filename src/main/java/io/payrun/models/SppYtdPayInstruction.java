@@ -38,13 +38,4 @@ public class SppYtdPayInstruction
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;
-
-
-
-
-
-
-
-
-
 }

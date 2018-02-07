@@ -43,15 +43,4 @@ public class P45PayInstruction
 
     @JsonProperty(value="PreviousEmployerPayeRef")
     public String previousEmployerPayeRef;
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -67,6 +67,14 @@ public class SimplePayroll {
         // Step 10: Query RTI Job Status
         System.out.println("Step 10: Query RTI Job Status");
         waitForJobCompletion(requestHelper, fpsJobInfoLink);
+
+        // Step 11: Review FPS transmission results
+        System.out.println("Step 11: Review FPS transmission results");
+        LinkCollection rtiLinks = requestHelper.get(employerLink.href + "/RtiTransactions", LinkCollection.class);
+        Link fpsLink = rtiLinks.getLinks().get(0);
+        RtiFpsTransaction fpsTransaction = requestHelper.get(fpsLink.href, RtiFpsTransaction.class);
+        System.out.println(fpsTransaction.requestData.value);
+        System.out.println(fpsTransaction.responseData.value);
     }
 
     private RtiJobInstruction createRtiJobInstruction(Link employerLink, Link payScheduleLink) {

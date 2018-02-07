@@ -16,7 +16,4 @@ public class Tag
 
     @JsonProperty(value="TaggedItem")
     public Link taggedItem;
-
-
-
 }

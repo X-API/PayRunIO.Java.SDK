@@ -13,6 +13,4 @@ public class NotContain extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

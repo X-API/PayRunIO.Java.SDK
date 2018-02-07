@@ -61,21 +61,4 @@ public class PayLineSap
 
     @JsonProperty(value="KeepInTouchDaysUsed")
     public java.lang.Integer keepInTouchDaysUsed;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

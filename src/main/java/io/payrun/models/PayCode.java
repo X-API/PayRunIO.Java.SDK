@@ -44,16 +44,4 @@ public class PayCode
 
     @JsonProperty(value="NominalCode")
     public Link nominalCode;
-
-
-
-
-
-
-
-
-
-
-
-
 }

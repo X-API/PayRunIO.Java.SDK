@@ -61,21 +61,4 @@ public class PayLineSsp
 
     @JsonProperty(value="ExclusionReason")
     public SspExclusionReason exclusionReason = SspExclusionReason.None;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

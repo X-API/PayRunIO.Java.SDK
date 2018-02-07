@@ -44,16 +44,4 @@ public class PayLineTax
 
     @JsonProperty(value="TaxablePay")
     public java.lang.Double taxablePay = Double.valueOf(0);;
-
-
-
-
-
-
-
-
-
-
-
-
 }

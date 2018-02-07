@@ -25,10 +25,4 @@ public class Address
 
     @JsonProperty(value="Country")
     public String country;
-
-
-
-
-
-
 }

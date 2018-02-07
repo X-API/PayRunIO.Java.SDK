@@ -13,6 +13,4 @@ public class IsNull extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

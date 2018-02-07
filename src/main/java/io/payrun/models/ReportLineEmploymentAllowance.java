@@ -22,9 +22,4 @@ public class ReportLineEmploymentAllowance
 
     @JsonProperty(value="TaxMonth")
     public java.lang.Short taxMonth;
-
-
-
-
-
 }

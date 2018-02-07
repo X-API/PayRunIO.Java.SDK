@@ -55,17 +55,4 @@ public class ShppPayInstruction
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="MothersDateOfDeath")
     public java.util.Date mothersDateOfDeath;
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

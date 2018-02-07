@@ -41,15 +41,4 @@ public class PayLineBenefit
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;
-
-
-
-
-
-
-
-
-
-
-
 }

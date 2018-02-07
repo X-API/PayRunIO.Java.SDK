@@ -24,9 +24,4 @@ public class SalaryPayInstruction
 
     @JsonProperty(value="ProRataMethod")
     public ProRataMethod proRataMethod = ProRataMethod.NotSet;
-
-
-
-
-
 }

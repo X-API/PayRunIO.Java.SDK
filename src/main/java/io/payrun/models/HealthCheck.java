@@ -13,6 +13,4 @@ public class HealthCheck
 
     @JsonProperty(value="Info")
     public String info;
-
-
 }

@@ -13,6 +13,4 @@ public class NominalCode
 
     @JsonProperty(value="Description")
     public String description;
-
-
 }

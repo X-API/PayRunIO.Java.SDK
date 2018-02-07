@@ -13,6 +13,4 @@ public class WhenLessThanEqualTo extends CompareConditionBase
 
     @JsonProperty(value="@ValueB")
     public String valueB;
-
-
 }

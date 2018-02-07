@@ -37,12 +37,6 @@ public class PayRunJobInstruction
         this.employees.instance = new java.util.ArrayList<>();
     }
 
-
-
-
-
-
-
     @com.fasterxml.jackson.annotation.JsonIgnore
     public java.util.ArrayList<Link> getEmployees() {
         return this.employees.instance;

@@ -10,5 +10,4 @@ public abstract class OutputBase
 
     @JsonProperty(value="@Output")
     public OutputType output = OutputType.Element;
-
 }

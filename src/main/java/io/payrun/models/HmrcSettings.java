@@ -46,17 +46,4 @@ public class HmrcSettings
 
     @JsonProperty(value="ContactFax")
     public String contactFax;
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -13,6 +13,4 @@ public class WithinArray extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

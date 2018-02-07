@@ -13,6 +13,4 @@ public class WhenGreaterThan extends CompareConditionBase
 
     @JsonProperty(value="@ValueB")
     public String valueB;
-
-
 }

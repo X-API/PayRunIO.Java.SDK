@@ -19,8 +19,4 @@ public class RenderConstant extends SingularOutputBase
 
     @JsonProperty(value="@Name")
     public String name;
-
-
-
-
 }

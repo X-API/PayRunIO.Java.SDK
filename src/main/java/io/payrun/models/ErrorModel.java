@@ -22,8 +22,6 @@ public class ErrorModel
         this.errors.instance = new java.util.ArrayList<>();
     }
 
-
-
     @com.fasterxml.jackson.annotation.JsonIgnore
     public java.util.ArrayList<String> getErrors() {
         return this.errors.instance;

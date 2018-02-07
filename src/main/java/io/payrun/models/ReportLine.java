@@ -22,9 +22,4 @@ public class ReportLine
 
     @JsonProperty(value="TaxMonth")
     public java.lang.Short taxMonth;
-
-
-
-
-
 }

@@ -67,22 +67,4 @@ public class RtiJobInstruction
 
     @JsonProperty(value="EarlierTaxYear")
     public java.lang.Integer earlierTaxYear;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

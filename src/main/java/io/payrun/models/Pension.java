@@ -82,26 +82,6 @@ public class Pension
         this.qualifyingPayCodes.instance = new java.util.ArrayList<>();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @com.fasterxml.jackson.annotation.JsonIgnore
     public java.util.ArrayList<String> getPensionablePayCodes() {
         return this.pensionablePayCodes.instance;

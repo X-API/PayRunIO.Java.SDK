@@ -35,13 +35,4 @@ public class PayLine
 
     @JsonProperty(value="TaxPeriod")
     public java.lang.Short taxPeriod;
-
-
-
-
-
-
-
-
-
 }

@@ -34,13 +34,4 @@ public class DpsMessage
 
     @JsonProperty(value="ProcessingResult")
     public String processingResult;
-
-
-
-
-
-
-
-
-
 }

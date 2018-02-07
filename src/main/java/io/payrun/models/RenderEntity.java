@@ -10,5 +10,4 @@ public class RenderEntity extends SingularOutputBase
 
     @JsonProperty(value="@Output")
     public OutputType output = OutputType.Element;
-
 }

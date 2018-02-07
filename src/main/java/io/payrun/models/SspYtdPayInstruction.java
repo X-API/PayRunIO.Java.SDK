@@ -44,15 +44,4 @@ public class SspYtdPayInstruction
 
     @JsonProperty(value="QualifyingDays")
     public java.lang.Integer qualifyingDays;
-
-
-
-
-
-
-
-
-
-
-
 }

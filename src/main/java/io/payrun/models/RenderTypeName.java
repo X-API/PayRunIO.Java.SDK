@@ -13,6 +13,4 @@ public class RenderTypeName extends SingularOutputBase
 
     @JsonProperty(value="@Name")
     public String name;
-
-
 }

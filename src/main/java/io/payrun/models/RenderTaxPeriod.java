@@ -22,9 +22,4 @@ public class RenderTaxPeriod extends SingularOutputBase
 
     @JsonProperty(value="@RenderOption")
     public RenderTaxPeriodOption renderOption = RenderTaxPeriodOption.AsString;
-
-
-
-
-
 }

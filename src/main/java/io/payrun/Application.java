@@ -1,4 +1,5 @@
-import io.payrun.SimplePayroll;
+package io.payrun;
+
 import io.payrun.helpers.RequestHelper;
 
 public class Application {

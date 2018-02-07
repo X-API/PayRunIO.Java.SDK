@@ -27,10 +27,4 @@ public class PensionPaymentReportingInstruction
 
     @JsonProperty(value="Pension")
     public Link pension;
-
-
-
-
-
-
 }

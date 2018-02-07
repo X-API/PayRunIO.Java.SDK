@@ -24,9 +24,4 @@ public class NiPayInstruction
 
     @JsonProperty(value="NiLetter")
     public String niLetter;
-
-
-
-
-
 }

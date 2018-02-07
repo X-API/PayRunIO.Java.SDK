@@ -13,6 +13,4 @@ public abstract class FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

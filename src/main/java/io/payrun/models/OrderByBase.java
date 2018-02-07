@@ -10,5 +10,4 @@ public abstract class OrderByBase
 
     @JsonProperty(value="@Property")
     public String property;
-
 }

@@ -33,12 +33,4 @@ public class BenefitPayInstruction
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;
-
-
-
-
-
-
-
-
 }

@@ -24,9 +24,4 @@ public class ReportingInstruction
 
     @JsonProperty(value="Value")
     public java.lang.Double value = Double.valueOf(0);;
-
-
-
-
-
 }

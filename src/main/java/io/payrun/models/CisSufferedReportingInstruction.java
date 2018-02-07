@@ -24,9 +24,4 @@ public class CisSufferedReportingInstruction
 
     @JsonProperty(value="Value")
     public java.lang.Double value = Double.valueOf(0);;
-
-
-
-
-
 }

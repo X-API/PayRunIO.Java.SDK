@@ -50,18 +50,4 @@ public class Employer
 
     @JsonProperty(value="AutoEnrolment")
     public EmployerAutoEnrolment autoEnrolment;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

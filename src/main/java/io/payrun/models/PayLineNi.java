@@ -86,30 +86,4 @@ public class PayLineNi
 
     @JsonProperty(value="WeeksAsDirector")
     public java.lang.Integer weeksAsDirector;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

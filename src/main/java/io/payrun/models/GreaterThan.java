@@ -13,6 +13,4 @@ public class GreaterThan extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

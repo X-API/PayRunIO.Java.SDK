@@ -61,21 +61,4 @@ public class PayLineSmp
 
     @JsonProperty(value="KeepInTouchDaysUsed")
     public java.lang.Integer keepInTouchDaysUsed;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

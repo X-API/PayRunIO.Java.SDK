@@ -36,13 +36,4 @@ public class AEAssessment
 
     @JsonProperty(value="AssessmentOverride")
     public AEAssessmentOverride assessmentOverride = AEAssessmentOverride.None;
-
-
-
-
-
-
-
-
-
 }

@@ -22,9 +22,4 @@ public class EmployeePartner
 
     @JsonProperty(value="NiNumber")
     public String niNumber;
-
-
-
-
-
 }

@@ -13,6 +13,4 @@ public class NameValuePair
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

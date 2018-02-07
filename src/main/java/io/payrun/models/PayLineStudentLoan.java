@@ -38,14 +38,4 @@ public class PayLineStudentLoan
 
     @JsonProperty(value="StudentLoanCalculationMethod")
     public StudentLoanCalculationMethod studentLoanCalculationMethod = StudentLoanCalculationMethod.Off;
-
-
-
-
-
-
-
-
-
-
 }

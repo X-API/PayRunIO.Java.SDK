@@ -33,12 +33,4 @@ public class NiAdjustmentPayInstruction
 
     @JsonProperty(value="Reason")
     public String reason;
-
-
-
-
-
-
-
-
 }

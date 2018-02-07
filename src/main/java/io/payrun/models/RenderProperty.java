@@ -19,8 +19,4 @@ public class RenderProperty extends SingularOutputBase
 
     @JsonProperty(value="@Format")
     public String format;
-
-
-
-
 }

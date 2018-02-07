@@ -32,11 +32,4 @@ public class SspPayInstruction
 
     @JsonProperty(value="AverageWeeklyEarningOverride")
     public java.lang.Double averageWeeklyEarningOverride;
-
-
-
-
-
-
-
 }

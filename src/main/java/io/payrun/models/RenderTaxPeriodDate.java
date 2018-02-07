@@ -28,11 +28,4 @@ public class RenderTaxPeriodDate extends SingularOutputBase
 
     @JsonProperty(value="@EndDate")
     public Boolean endDate = false;
-
-
-
-
-
-
-
 }

@@ -37,14 +37,4 @@ public class EntityGroup
 
     @JsonProperty(value="Group")
     public java.util.ArrayList<EntityGroup> groups;
-
-
-
-
-
-
-
-
-
-
 }

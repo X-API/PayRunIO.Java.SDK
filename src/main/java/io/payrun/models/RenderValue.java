@@ -22,9 +22,4 @@ public class RenderValue extends SingularOutputBase
 
     @JsonProperty(value="@Negate")
     public Boolean negate = false;
-
-
-
-
-
 }

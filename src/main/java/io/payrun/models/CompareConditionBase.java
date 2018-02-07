@@ -13,6 +13,4 @@ public abstract class CompareConditionBase
 
     @JsonProperty(value="@ValueB")
     public String valueB;
-
-
 }

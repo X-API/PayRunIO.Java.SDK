@@ -13,6 +13,4 @@ public class PaySchedule
 
     @JsonProperty(value="PayFrequency")
     public PayFrequency payFrequency = PayFrequency.Weekly;
-
-
 }

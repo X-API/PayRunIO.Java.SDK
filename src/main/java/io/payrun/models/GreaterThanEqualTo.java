@@ -13,6 +13,4 @@ public class GreaterThanEqualTo extends FilterBase
 
     @JsonProperty(value="@Value")
     public String value;
-
-
 }

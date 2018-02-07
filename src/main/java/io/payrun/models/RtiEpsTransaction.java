@@ -23,17 +23,11 @@ public class RtiEpsTransaction
     @JsonProperty(value="TaxYear")
     public java.lang.Short taxYear;
 
-    @JsonProperty(value="Request")
-    public String request;
-
-    @JsonProperty(value="Response")
-    public String response;
-
     @JsonProperty(value="RequestData")
-    public String requestData;
+    public CDataWrapper requestData;
 
     @JsonProperty(value="ResponseData")
-    public String responseData;
+    public CDataWrapper responseData;
 
     @JsonProperty(value="EmployerCore")
     public Link employerCore;
@@ -56,19 +50,8 @@ public class RtiEpsTransaction
     @JsonProperty(value="PeriodOfInactivityTo")
     public java.util.Date periodOfInactivityTo;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public class CDataWrapper { 
+        @JsonProperty(value="#cdata-section")
+        public String value;
+    }
 }

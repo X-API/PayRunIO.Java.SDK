@@ -13,6 +13,4 @@ public class ReportTransform
 
     @JsonProperty(value="TransformDefinitionId")
     public String transformDefinitionId;
-
-
 }

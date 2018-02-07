@@ -24,9 +24,4 @@ public class TaxPayInstruction
 
     @JsonProperty(value="TaxCode")
     public String taxCode;
-
-
-
-
-
 }

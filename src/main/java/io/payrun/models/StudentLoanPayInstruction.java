@@ -21,8 +21,4 @@ public class StudentLoanPayInstruction
 
     @JsonProperty(value="StudentLoanCalculationMethod")
     public StudentLoanCalculationMethod studentLoanCalculationMethod = StudentLoanCalculationMethod.Off;
-
-
-
-
 }

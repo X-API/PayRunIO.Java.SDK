@@ -23,17 +23,11 @@ public class RtiFpsTransaction
     @JsonProperty(value="TaxYear")
     public java.lang.Short taxYear;
 
-    @JsonProperty(value="Request")
-    public String request;
-
-    @JsonProperty(value="Response")
-    public String response;
-
     @JsonProperty(value="RequestData")
-    public String requestData;
+    public CDataWrapper requestData;
 
     @JsonProperty(value="ResponseData")
-    public String responseData;
+    public CDataWrapper responseData;
 
     @JsonProperty(value="EmployerCore")
     public Link employerCore;
@@ -50,17 +44,8 @@ public class RtiFpsTransaction
     @JsonProperty(value="LateReason")
     public FpsLateReason lateReason;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public class CDataWrapper { 
+        @JsonProperty(value="#cdata-section")
+        public String value;
+    }
 }

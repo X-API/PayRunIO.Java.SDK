@@ -22,9 +22,4 @@ public class ReportLineCisSuffered
 
     @JsonProperty(value="TaxMonth")
     public java.lang.Short taxMonth;
-
-
-
-
-
 }

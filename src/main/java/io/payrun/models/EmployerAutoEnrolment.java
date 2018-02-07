@@ -54,19 +54,4 @@ public class EmployerAutoEnrolment
 
     @JsonProperty(value="Pension")
     public Link pension;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

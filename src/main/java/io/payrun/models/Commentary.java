@@ -13,6 +13,4 @@ public class Commentary
 
     @JsonProperty(value="Detail")
     public String detail;
-
-
 }

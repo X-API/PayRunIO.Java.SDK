@@ -34,13 +34,4 @@ public class ExpressionCalculator extends AggregateOutputBase
 
     @JsonProperty(value="@Min")
     public String min;
-
-
-
-
-
-
-
-
-
 }

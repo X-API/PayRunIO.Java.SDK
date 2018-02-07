@@ -34,13 +34,4 @@ public class ReportLineStatutoryRecovery
 
     @JsonProperty(value="Compensation")
     public java.lang.Double compensation = Double.valueOf(0);;
-
-
-
-
-
-
-
-
-
 }
