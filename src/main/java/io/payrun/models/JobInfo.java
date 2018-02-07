@@ -24,7 +24,7 @@ public class JobInfo
     public JobStatus jobStatus = JobStatus.New;
 
     @JsonProperty(value="Progress")
-    public java.lang.Double progress = Double.valueOf(0);;
+    public java.lang.Double progress = 0d;;
 
     @JsonProperty(value="HoldingDate")
     public java.util.Date holdingDate;

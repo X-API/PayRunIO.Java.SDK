@@ -9,7 +9,7 @@ public class ReportLineEmploymentAllowance
 {
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="Description")
     public String description;

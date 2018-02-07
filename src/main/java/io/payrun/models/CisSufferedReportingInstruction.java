@@ -23,5 +23,5 @@ public class CisSufferedReportingInstruction
     public java.lang.Short taxMonth;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 }

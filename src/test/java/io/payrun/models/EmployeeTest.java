@@ -95,7 +95,7 @@ public class EmployeeTest {
         employee.leavingDate = createDate(2018,1,1);
         employee.niNumber = "AB654321B";
         employee.maritalStatus = MaritalStatus.NotSet;
-        employee.nicLiability = NicLiability.IsFullyLiable;
+        employee.nicLiability = NicLiability.IsFullyLiable.toString();
         employee.onStrike = true;
         employee.paymentMethod = PaymentMethod.Cheque;
 

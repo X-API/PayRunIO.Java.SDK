@@ -20,10 +20,10 @@ public class P45PayInstruction
     public String description;
 
     @JsonProperty(value="TaxablePay")
-    public java.lang.Double taxablePay = Double.valueOf(0);;
+    public java.lang.Double taxablePay = 0d;;
 
     @JsonProperty(value="TaxPaid")
-    public java.lang.Double taxPaid = Double.valueOf(0);;
+    public java.lang.Double taxPaid = 0d;;
 
     @JsonProperty(value="TaxCode")
     public String taxCode;

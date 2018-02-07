@@ -9,7 +9,7 @@ public class ReportLineStatutoryRecovery
 {
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="Description")
     public String description;
@@ -30,8 +30,8 @@ public class ReportLineStatutoryRecovery
     public String absenceReportCode;
 
     @JsonProperty(value="StatutoryTotal")
-    public java.lang.Double statutoryTotal = Double.valueOf(0);;
+    public java.lang.Double statutoryTotal = 0d;;
 
     @JsonProperty(value="Compensation")
-    public java.lang.Double compensation = Double.valueOf(0);;
+    public java.lang.Double compensation = 0d;;
 }

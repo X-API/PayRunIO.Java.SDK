@@ -24,7 +24,7 @@ public class PayLineShpp
     public SystemCodeType payCodeType = SystemCodeType.NotSet;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="PaymentDate")
@@ -45,10 +45,10 @@ public class PayLineShpp
     public java.util.Date absenceEnd;
 
     @JsonProperty(value="AverageWeeklyEarnings")
-    public java.lang.Double averageWeeklyEarnings = Double.valueOf(0);;
+    public java.lang.Double averageWeeklyEarnings = 0d;;
 
     @JsonProperty(value="WeeksUsed")
-    public java.lang.Double weeksUsed = Double.valueOf(0);;
+    public java.lang.Double weeksUsed = 0d;;
 
     @JsonProperty(value="ExclusionReason")
     public ShppExclusionReason exclusionReason = ShppExclusionReason.None;

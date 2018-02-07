@@ -24,7 +24,7 @@ public class PayLineRate
     public SystemCodeType payCodeType = SystemCodeType.NotSet;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="PaymentDate")
@@ -37,13 +37,13 @@ public class PayLineRate
     public java.lang.Short taxPeriod;
 
     @JsonProperty(value="Rate")
-    public java.lang.Double rate = Double.valueOf(0);;
+    public java.lang.Double rate = 0d;;
 
     @JsonProperty(value="RateUoM")
     public UomBasicPay rateUoM = UomBasicPay.NotSet;
 
     @JsonProperty(value="Units")
-    public java.lang.Double units = Double.valueOf(0);;
+    public java.lang.Double units = 0d;;
 
     @JsonProperty(value="ProRataMethodApplied")
     public ProRataMethod proRataMethodApplied = ProRataMethod.NotSet;

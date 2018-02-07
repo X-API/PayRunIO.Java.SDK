@@ -20,52 +20,52 @@ public class NiYtdPayInstruction
     public String description;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="EmployerNI")
-    public java.lang.Double employerNI = Double.valueOf(0);;
+    public java.lang.Double employerNI = 0d;;
 
     @JsonProperty(value="NiablePay")
-    public java.lang.Double niablePay = Double.valueOf(0);;
+    public java.lang.Double niablePay = 0d;;
 
     @JsonProperty(value="NiLetter")
     public String niLetter;
 
     @JsonProperty(value="LEL")
-    public java.lang.Double lEL = Double.valueOf(0);;
+    public java.lang.Double lEL = 0d;;
 
     @JsonProperty(value="LELtoPT")
-    public java.lang.Double lELtoPT = Double.valueOf(0);;
+    public java.lang.Double lELtoPT = 0d;;
 
     @JsonProperty(value="PTtoST")
-    public java.lang.Double pTtoST = Double.valueOf(0);;
+    public java.lang.Double pTtoST = 0d;;
 
     @JsonProperty(value="STtoUAP")
-    public java.lang.Double sTtoUAP = Double.valueOf(0);;
+    public java.lang.Double sTtoUAP = 0d;;
 
     @JsonProperty(value="STtoUEL")
-    public java.lang.Double sTtoUEL = Double.valueOf(0);;
+    public java.lang.Double sTtoUEL = 0d;;
 
     @JsonProperty(value="UAPtoUEL")
-    public java.lang.Double uAPtoUEL = Double.valueOf(0);;
+    public java.lang.Double uAPtoUEL = 0d;;
 
     @JsonProperty(value="UELtoUST")
-    public java.lang.Double uELtoUST = Double.valueOf(0);;
+    public java.lang.Double uELtoUST = 0d;;
 
     @JsonProperty(value="UELtoAUST")
-    public java.lang.Double uELtoAUST = Double.valueOf(0);;
+    public java.lang.Double uELtoAUST = 0d;;
 
     @JsonProperty(value="AboveUST")
-    public java.lang.Double aboveUST = Double.valueOf(0);;
+    public java.lang.Double aboveUST = 0d;;
 
     @JsonProperty(value="AboveAUST")
-    public java.lang.Double aboveAUST = Double.valueOf(0);;
+    public java.lang.Double aboveAUST = 0d;;
 
     @JsonProperty(value="RebateEE")
-    public java.lang.Double rebateEE = Double.valueOf(0);;
+    public java.lang.Double rebateEE = 0d;;
 
     @JsonProperty(value="RebateER")
-    public java.lang.Double rebateER = Double.valueOf(0);;
+    public java.lang.Double rebateER = 0d;;
 
     @JsonProperty(value="DirCalculationMethod")
     public DirCalculationMethod dirCalculationMethod = DirCalculationMethod.Off;

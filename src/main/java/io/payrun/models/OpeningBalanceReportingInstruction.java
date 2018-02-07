@@ -23,47 +23,47 @@ public class OpeningBalanceReportingInstruction
     public java.lang.Short taxMonth;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="EmploymentAllowanceClaimed")
-    public java.lang.Double employmentAllowanceClaimed = Double.valueOf(0);;
+    public java.lang.Double employmentAllowanceClaimed = 0d;;
 
     @JsonProperty(value="Tax")
-    public java.lang.Double tax = Double.valueOf(0);;
+    public java.lang.Double tax = 0d;;
 
     @JsonProperty(value="StudentLoan")
-    public java.lang.Double studentLoan = Double.valueOf(0);;
+    public java.lang.Double studentLoan = 0d;;
 
     @JsonProperty(value="EmployerNI")
-    public java.lang.Double employerNI = Double.valueOf(0);;
+    public java.lang.Double employerNI = 0d;;
 
     @JsonProperty(value="EmployeeNI")
-    public java.lang.Double employeeNI = Double.valueOf(0);;
+    public java.lang.Double employeeNI = 0d;;
 
     @JsonProperty(value="SmpRecovered")
-    public java.lang.Double smpRecovered = Double.valueOf(0);;
+    public java.lang.Double smpRecovered = 0d;;
 
     @JsonProperty(value="SmpComp")
-    public java.lang.Double smpComp = Double.valueOf(0);;
+    public java.lang.Double smpComp = 0d;;
 
     @JsonProperty(value="SppRecovered")
-    public java.lang.Double sppRecovered = Double.valueOf(0);;
+    public java.lang.Double sppRecovered = 0d;;
 
     @JsonProperty(value="SppComp")
-    public java.lang.Double sppComp = Double.valueOf(0);;
+    public java.lang.Double sppComp = 0d;;
 
     @JsonProperty(value="ShppRecovered")
-    public java.lang.Double shppRecovered = Double.valueOf(0);;
+    public java.lang.Double shppRecovered = 0d;;
 
     @JsonProperty(value="ShppComp")
-    public java.lang.Double shppComp = Double.valueOf(0);;
+    public java.lang.Double shppComp = 0d;;
 
     @JsonProperty(value="SapRecovered")
-    public java.lang.Double sapRecovered = Double.valueOf(0);;
+    public java.lang.Double sapRecovered = 0d;;
 
     @JsonProperty(value="SapComp")
-    public java.lang.Double sapComp = Double.valueOf(0);;
+    public java.lang.Double sapComp = 0d;;
 
     @JsonProperty(value="AmountPaid")
-    public java.lang.Double amountPaid = Double.valueOf(0);;
+    public java.lang.Double amountPaid = 0d;;
 }

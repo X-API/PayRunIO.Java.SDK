@@ -28,13 +28,13 @@ public class SmpYtdPayInstruction
     public java.util.Date absenceEnd;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="AverageWeeklyEarnings")
-    public java.lang.Double averageWeeklyEarnings = Double.valueOf(0);;
+    public java.lang.Double averageWeeklyEarnings = 0d;;
 
     @JsonProperty(value="WeeksUsed")
-    public java.lang.Double weeksUsed = Double.valueOf(0);;
+    public java.lang.Double weeksUsed = 0d;;
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;

@@ -24,7 +24,7 @@ public class PayLineTax
     public SystemCodeType payCodeType = SystemCodeType.NotSet;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="PaymentDate")
@@ -43,5 +43,5 @@ public class PayLineTax
     public String taxCode;
 
     @JsonProperty(value="TaxablePay")
-    public java.lang.Double taxablePay = Double.valueOf(0);;
+    public java.lang.Double taxablePay = 0d;;
 }

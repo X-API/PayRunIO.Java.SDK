@@ -9,7 +9,7 @@ public class ReportLineTaxSummary
 {
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="Description")
     public String description;
@@ -24,23 +24,23 @@ public class ReportLineTaxSummary
     public java.lang.Short taxMonth;
 
     @JsonProperty(value="GrossNetPay")
-    public java.lang.Double grossNetPay = Double.valueOf(0);;
+    public java.lang.Double grossNetPay = 0d;;
 
     @JsonProperty(value="GrossNiablePay")
-    public java.lang.Double grossNiablePay = Double.valueOf(0);;
+    public java.lang.Double grossNiablePay = 0d;;
 
     @JsonProperty(value="GrossEmployerNI")
-    public java.lang.Double grossEmployerNI = Double.valueOf(0);;
+    public java.lang.Double grossEmployerNI = 0d;;
 
     @JsonProperty(value="GrossEmployeeNI")
-    public java.lang.Double grossEmployeeNI = Double.valueOf(0);;
+    public java.lang.Double grossEmployeeNI = 0d;;
 
     @JsonProperty(value="GrossTaxablePay")
-    public java.lang.Double grossTaxablePay = Double.valueOf(0);;
+    public java.lang.Double grossTaxablePay = 0d;;
 
     @JsonProperty(value="GrossTax")
-    public java.lang.Double grossTax = Double.valueOf(0);;
+    public java.lang.Double grossTax = 0d;;
 
     @JsonProperty(value="StudentLoan")
-    public java.lang.Double studentLoan = Double.valueOf(0);;
+    public java.lang.Double studentLoan = 0d;;
 }

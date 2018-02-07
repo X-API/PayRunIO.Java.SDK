@@ -20,10 +20,10 @@ public class TaxYtdPayInstruction
     public String description;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="TaxablePay")
-    public java.lang.Double taxablePay = Double.valueOf(0);;
+    public java.lang.Double taxablePay = 0d;;
 
     @JsonProperty(value="TaxCode")
     public String taxCode;

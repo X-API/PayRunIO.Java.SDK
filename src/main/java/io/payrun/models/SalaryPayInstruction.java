@@ -20,7 +20,7 @@ public class SalaryPayInstruction
     public String description;
 
     @JsonProperty(value="AnnualSalary")
-    public java.lang.Double annualSalary = Double.valueOf(0);;
+    public java.lang.Double annualSalary = 0d;;
 
     @JsonProperty(value="ProRataMethod")
     public ProRataMethod proRataMethod = ProRataMethod.NotSet;

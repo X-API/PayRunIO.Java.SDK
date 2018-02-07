@@ -48,7 +48,7 @@ public class Employee
     public Gender gender = Gender.Unknown;
 
     @JsonProperty(value="NicLiability")
-    public NicLiability nicLiability = NicLiability.IsFullyLiable;
+    public String nicLiability = "IsFullyLiable";
 
     @JsonProperty(value="Region")
     public CalculatorRegion region = CalculatorRegion.NotSet;
@@ -83,7 +83,7 @@ public class Employee
     public Address address;
 
     @JsonProperty(value="HoursPerWeek")
-    public java.lang.Double hoursPerWeek = Double.valueOf(0);;
+    public java.lang.Double hoursPerWeek = 0d;;
 
     @JsonProperty(value="PassportNumber")
     public String passportNumber;

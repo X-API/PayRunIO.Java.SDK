@@ -20,13 +20,13 @@ public class PensionYtdPayInstruction
     public String description;
 
     @JsonProperty(value="PensionablePay")
-    public java.lang.Double pensionablePay = Double.valueOf(0);;
+    public java.lang.Double pensionablePay = 0d;;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="EmployerContribution")
-    public java.lang.Double employerContribution = Double.valueOf(0);;
+    public java.lang.Double employerContribution = 0d;;
 
     @JsonProperty(value="Code")
     public String code;

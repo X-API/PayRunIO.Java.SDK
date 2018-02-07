@@ -9,7 +9,7 @@ public class ReportLinePension
 {
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="Description")
     public String description;
@@ -27,11 +27,11 @@ public class ReportLinePension
     public String pensionKey;
 
     @JsonProperty(value="EmployeeContribution")
-    public java.lang.Double employeeContribution = Double.valueOf(0);;
+    public java.lang.Double employeeContribution = 0d;;
 
     @JsonProperty(value="EmployerContribution")
-    public java.lang.Double employerContribution = Double.valueOf(0);;
+    public java.lang.Double employerContribution = 0d;;
 
     @JsonProperty(value="Payment")
-    public java.lang.Double payment = Double.valueOf(0);;
+    public java.lang.Double payment = 0d;;
 }

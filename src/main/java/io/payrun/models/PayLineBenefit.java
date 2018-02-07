@@ -24,7 +24,7 @@ public class PayLineBenefit
     public SystemCodeType payCodeType = SystemCodeType.NotSet;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="PaymentDate")
@@ -37,7 +37,7 @@ public class PayLineBenefit
     public java.lang.Short taxPeriod;
 
     @JsonProperty(value="TaxableAmount")
-    public java.lang.Double taxableAmount = Double.valueOf(0);;
+    public java.lang.Double taxableAmount = 0d;;
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;

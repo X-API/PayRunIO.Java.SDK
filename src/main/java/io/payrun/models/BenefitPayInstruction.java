@@ -23,13 +23,13 @@ public class BenefitPayInstruction
     public String code;
 
     @JsonProperty(value="TotalCost")
-    public java.lang.Double totalCost = Double.valueOf(0);;
+    public java.lang.Double totalCost = 0d;;
 
     @JsonProperty(value="EmployeeContribution")
-    public java.lang.Double employeeContribution = Double.valueOf(0);;
+    public java.lang.Double employeeContribution = 0d;;
 
     @JsonProperty(value="CashEquivalent")
-    public java.lang.Double cashEquivalent = Double.valueOf(0);;
+    public java.lang.Double cashEquivalent = 0d;;
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;

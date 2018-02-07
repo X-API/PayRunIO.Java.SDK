@@ -23,11 +23,11 @@ public class RatePayInstruction
     public String code;
 
     @JsonProperty(value="Rate")
-    public java.lang.Double rate = Double.valueOf(0);;
+    public java.lang.Double rate = 0d;;
 
     @JsonProperty(value="RateUoM")
     public UomBasicPay rateUoM = UomBasicPay.NotSet;
 
     @JsonProperty(value="Units")
-    public java.lang.Double units = Double.valueOf(0);;
+    public java.lang.Double units = 0d;;
 }

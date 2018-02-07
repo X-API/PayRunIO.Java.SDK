@@ -23,10 +23,10 @@ public class BenefitYtdPayInstruction
     public String code;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = Double.valueOf(0);;
+    public java.lang.Double value = 0d;;
 
     @JsonProperty(value="TaxableAmount")
-    public java.lang.Double taxableAmount = Double.valueOf(0);;
+    public java.lang.Double taxableAmount = 0d;;
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;

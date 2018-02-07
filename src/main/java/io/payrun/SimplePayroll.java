@@ -149,7 +149,7 @@ public class SimplePayroll {
         employee.niNumber = "AA000000A";
         employee.dateOfBirth = createDate("1980-01-01");
         employee.gender = Gender.Male;
-        employee.nicLiability = NicLiability.IsFullyLiable;
+        employee.nicLiability = NicLiability.IsFullyLiable.toString();
         employee.region = CalculatorRegion.England;
         employee.territory = CalculatorTerritory.UnitedKingdom;
         employee.paySchedule = payScheduleLink;
