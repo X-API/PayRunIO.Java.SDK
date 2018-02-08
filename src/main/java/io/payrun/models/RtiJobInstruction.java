@@ -41,7 +41,7 @@ public class RtiJobInstruction
     public java.util.Date schemeCeased;
 
     @JsonProperty(value="FinalSubmissionForYear")
-    public Boolean finalSubmissionForYear = false;
+    public Boolean finalSubmissionForYear;
 
     @JsonProperty(value="LateReason")
     public FpsLateReason lateReason;

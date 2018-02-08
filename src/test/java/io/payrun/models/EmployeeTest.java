@@ -108,11 +108,11 @@ public class EmployeeTest {
         employee.paymentToANonIndividual = false;
         employee.region = CalculatorRegion.England;
         employee.territory = CalculatorTerritory.UnitedKingdom;
-        employee.ruleExclusions = RuleExclusionFlags.None;
+        employee.ruleExclusions = RuleExclusionFlags.None.toString();
         employee.seconded = EmployeeSecondment.NotSet;
         employee.startDate = createDate(1995,4,6);
         employee.title = "Mr";
-        employee.workingWeek = WorkingWeek.AllWeekDays;
+        employee.workingWeek = WorkingWeek.Monday.toString() + "|" + WorkingWeek.Tuesday.toString() + "|" + WorkingWeek.Wednesday.toString();
         return employee;
     }
 

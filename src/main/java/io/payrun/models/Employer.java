@@ -28,7 +28,7 @@ public class Employer
     public String bacsServiceUserNumber;
 
     @JsonProperty(value="RuleExclusions")
-    public RuleExclusionFlags ruleExclusions = RuleExclusionFlags.None;
+    public String ruleExclusions = "None";
 
     @JsonProperty(value="ClaimEmploymentAllowance")
     public Boolean claimEmploymentAllowance = false;

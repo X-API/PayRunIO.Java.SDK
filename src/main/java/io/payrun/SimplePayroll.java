@@ -155,8 +155,8 @@ public class SimplePayroll {
         employee.paySchedule = payScheduleLink;
         employee.startDate = createDate("2017-04-06");
         employee.starterDeclaration = StarterDeclaration.A;
-        employee.ruleExclusions = RuleExclusionFlags.None;
-        employee.workingWeek = WorkingWeek.AllWeekDays;
+        employee.ruleExclusions = RuleExclusionFlags.None.toString();
+        employee.workingWeek = WorkingWeek.AllWeekDays.toString();
 
         employee.address = new Address();
         employee.address.address1 = "House";
@@ -196,7 +196,7 @@ public class SimplePayroll {
         employer.effectiveDate = createDate("2017-01-01");
         employer.name = "Getting Started Co Ltd";
         employer.bacsServiceUserNumber = "123456";
-        employer.ruleExclusions = RuleExclusionFlags.None;
+        employer.ruleExclusions = RuleExclusionFlags.None.toString();
         employer.territory = CalculatorTerritory.UnitedKingdom;
         employer.region = CalculatorRegion.England;
 

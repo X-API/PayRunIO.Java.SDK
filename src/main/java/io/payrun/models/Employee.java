@@ -74,10 +74,10 @@ public class Employee
     public LeaverReason leaverReason;
 
     @JsonProperty(value="RuleExclusions")
-    public RuleExclusionFlags ruleExclusions = RuleExclusionFlags.None;
+    public String ruleExclusions = "None";
 
     @JsonProperty(value="WorkingWeek")
-    public WorkingWeek workingWeek = WorkingWeek.None;
+    public String workingWeek = "None";
 
     @JsonProperty(value="Address")
     public Address address;
