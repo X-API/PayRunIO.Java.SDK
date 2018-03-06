@@ -2,18 +2,28 @@ package io.payrun.models;
 
 import io.payrun.helpers.SerializerHelper;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 public class EmployeeTest {
+
+    private SerializerHelper serializerHelper;
+
+    @BeforeEach
+    void setUp() {
+        serializerHelper = new SerializerHelper();
+    }
+
     @Test
     public void givenSerialisedEmployee_WhenDesrializing_ThenExpectedObjectCreated(){
         String data = "{\"Employee\":{\"Code\":\"EMP001\",\"FirstName\":\"Terry\",\"LastName\":\"Tester\",\"DateOfBirth\":\"1960-01-01\",\"DirectorshipAppointmentDate\":null,\"Gender\":\"Male\",\"NicLiability\":\"IsFullyLiable\",\"Region\":\"England\",\"Territory\":\"UnitedKingdom\",\"PaySchedule\":{\"@title\":\"SCH001: [My Monthly:Monthly]\",\"@href\":\"/Employer/ER001/PaySchedule/SCH001\",\"@rel\":\"PaySchedule\"},\"StartDate\":\"2017-01-01\",\"StarterDeclaration\":\"A\",\"LeavingDate\":null,\"LeaverReason\":null,\"RuleExclusions\":\"None\",\"WorkingWeek\":\"AllWeekDays\",\"Address\":{\"Address1\":\"House\",\"Address2\":\"Street\",\"Address3\":\"Town\",\"Address4\":\"County\",\"Postcode\":\"TE1 1ST\",\"Country\":\"United Kingdom\"},\"HoursPerWeek\":\"0.0000\",\"Seconded\":\"NotSet\",\"EEACitizen\":\"false\",\"EPM6\":\"false\",\"PaymentToANonIndividual\":\"false\",\"IrregularEmployment\":\"false\",\"OnStrike\":\"false\",\"PaymentMethod\":\"NotSet\",\"MaritalStatus\":\"NotSet\",\"IsAgencyWorker\":\"false\",\"Deactivated\":\"false\",\"EffectiveDate\":\"2017-04-01\",\"Revision\":\"1\"}}";
 
-        Employee result = SerializerHelper.fromJson(data, Employee.class);
+        Employee result = serializerHelper.fromJson(data, Employee.class);
 
         Assertions.assertEquals(result.code, "EMP001");
     }
@@ -23,7 +33,7 @@ public class EmployeeTest {
     {
         Employee employee = createEmployee();
 
-        String result = SerializerHelper.toJson(employee);
+        String result = serializerHelper.toJson(employee);
 
         System.out.println(result);
         Assertions.assertNotNull(result);
@@ -33,11 +43,17 @@ public class EmployeeTest {
     public void givenEmployee_WhenSerialising_AndDesrializing_ThenDataIsAsExpected(){
         Employee employee = createEmployee();
 
-        String resultA = SerializerHelper.toJson(employee);
+        String resultA = serializerHelper.toJson(employee);
 
-        Employee employeeB = SerializerHelper.fromJson(resultA, Employee.class);
+        Employee employeeB = serializerHelper.fromJson(resultA, Employee.class);
 
-        String resultB = SerializerHelper.toJson(employeeB);
+        // field has default value "false" and employee had it set to null, so resultA does NOT contain that field
+        assertFalse(employeeB.deactivated);
+
+        // setting deactivated back to null to mimick previous test version expectation
+        employeeB.deactivated = null;
+        
+        String resultB = serializerHelper.toJson(employeeB);
 
         System.out.println(resultA);
         System.out.println(resultB);

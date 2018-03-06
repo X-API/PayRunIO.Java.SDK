@@ -1,6 +1,5 @@
 package io.payrun.helpers;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import io.payrun.models.Link;
 import io.payrun.oauth1.OAuth1;
 import org.springframework.http.*;
@@ -14,15 +13,17 @@ import java.net.URISyntaxException;
 import static java.util.Collections.singletonList;
 
 public class RequestHelper {
+
     private final String apiHost;
     private final String consumerKey;
     private final String consumerSecret;
+    private final SerializerHelper serializerHelper;
 
     public RequestHelper(String apiHost, String clientKey, String clientSecret){
-
         this.apiHost = apiHost;
         this.consumerKey = clientKey;
         this.consumerSecret = clientSecret;
+        this.serializerHelper = new SerializerHelper();
     }
 
     public String getRaw(String path){
@@ -42,7 +43,7 @@ public class RequestHelper {
 
         ResponseEntity<String> response = this.getResponse(uri, HttpMethod.GET);
 
-        T output = SerializerHelper.fromJson(response.getBody(), clss);
+        T output = serializerHelper.fromJson(response.getBody(), clss);
 
         return output;
     }
@@ -54,7 +55,7 @@ public class RequestHelper {
 
         ResponseEntity<String> response = this.getResponse(uri, HttpMethod.POST, objectToPost);
 
-        Link output = SerializerHelper.fromJson(response.getBody(), Link.class);
+        Link output = serializerHelper.fromJson(response.getBody(), Link.class);
 
         return output;
     }
@@ -66,7 +67,7 @@ public class RequestHelper {
 
         ResponseEntity<String> response = this.getResponse(uri, HttpMethod.PUT, objectToPut);
 
-        T output = (T)SerializerHelper.fromJson(response.getBody(), objectToPut.getClass());
+        T output = (T)serializerHelper.fromJson(response.getBody(), objectToPut.getClass());
 
         return output;
     }
@@ -78,7 +79,7 @@ public class RequestHelper {
 
         ResponseEntity<String> response = this.getResponse(uri, HttpMethod.PATCH, patch);
 
-        T output = SerializerHelper.fromJson(response.getBody(), clss);
+        T output = serializerHelper.fromJson(response.getBody(), clss);
 
         return output;
     }
@@ -126,7 +127,7 @@ public class RequestHelper {
                 payload = (String)objectToTransmit;
             }
             else {
-                payload = SerializerHelper.toJson(objectToTransmit);
+                payload = serializerHelper.toJson(objectToTransmit);
             }
 
             headers.setContentType(MediaType.APPLICATION_JSON);
