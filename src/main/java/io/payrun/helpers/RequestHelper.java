@@ -2,6 +2,8 @@ package io.payrun.helpers;
 
 import io.payrun.models.Link;
 import io.payrun.oauth1.OAuth1;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.*;
 import org.springframework.lang.Nullable;
 import org.springframework.web.client.HttpClientErrorException;
@@ -13,6 +15,8 @@ import java.net.URISyntaxException;
 import static java.util.Collections.singletonList;
 
 public class RequestHelper {
+
+    private final Logger log = LoggerFactory.getLogger(getClass());
 
     private final String apiHost;
     private final String consumerKey;
@@ -93,15 +97,11 @@ public class RequestHelper {
     }
 
     private URI getUri(String path) {
-        URI uri = null;
-
         try {
-            uri = new URI(this.apiHost + path);
+            return new URI(this.apiHost + path);
         } catch (URISyntaxException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-
-        return uri;
     }
 
     private ResponseEntity<String> getResponse(URI uri, HttpMethod verb) {
@@ -136,25 +136,14 @@ public class RequestHelper {
 
         final HttpEntity<String> request = new HttpEntity<>(payload, headers);
 
-        try{
+        try {
             ResponseEntity<String> response = restTemplate.exchange(uri, verb, request, String.class);
 
             return response;
-        }
-        catch (HttpClientErrorException e) {
-            System.out.println(verb.name());
-            System.out.println(uri.toString());
-
-            if (payload != null)
-            {
-                String[] lines = payload.split("\\n");
-
-                for (String line : lines) {
-                    System.out.println(line);
-                }
+        } catch (HttpClientErrorException e) {
+            if (log.isDebugEnabled()) {
+                log.debug("VERB: {}\nURI: {}\nPAYLOAD:\n{}\nSTATUS CODE: {}\nRESPONSE: {}", verb, uri, payload, e.getStatusCode(), e.getResponseBodyAsString());
             }
-            System.out.println(e.getStatusCode());
-            System.out.println(e.getResponseBodyAsString());
             throw e;
         }
     }
