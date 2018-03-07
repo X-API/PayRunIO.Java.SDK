@@ -1,8 +1,9 @@
 package io.payrun.helpers;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import io.payrun.models.Link;
 import io.payrun.oauth1.OAuth1;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.*;
 import org.springframework.lang.Nullable;
 import org.springframework.web.client.HttpClientErrorException;
@@ -14,15 +15,19 @@ import java.net.URISyntaxException;
 import static java.util.Collections.singletonList;
 
 public class RequestHelper {
+
+    private final Logger log = LoggerFactory.getLogger(getClass());
+
     private final String apiHost;
     private final String consumerKey;
     private final String consumerSecret;
+    private final SerializerHelper serializerHelper;
 
     public RequestHelper(String apiHost, String clientKey, String clientSecret){
-
         this.apiHost = apiHost;
         this.consumerKey = clientKey;
         this.consumerSecret = clientSecret;
+        this.serializerHelper = new SerializerHelper();
     }
 
     public String getRaw(String path){
@@ -42,7 +47,7 @@ public class RequestHelper {
 
         ResponseEntity<String> response = this.getResponse(uri, HttpMethod.GET);
 
-        T output = SerializerHelper.fromJson(response.getBody(), clss);
+        T output = serializerHelper.fromJson(response.getBody(), clss);
 
         return output;
     }
@@ -54,7 +59,7 @@ public class RequestHelper {
 
         ResponseEntity<String> response = this.getResponse(uri, HttpMethod.POST, objectToPost);
 
-        Link output = SerializerHelper.fromJson(response.getBody(), Link.class);
+        Link output = serializerHelper.fromJson(response.getBody(), Link.class);
 
         return output;
     }
@@ -66,7 +71,7 @@ public class RequestHelper {
 
         ResponseEntity<String> response = this.getResponse(uri, HttpMethod.PUT, objectToPut);
 
-        T output = (T)SerializerHelper.fromJson(response.getBody(), objectToPut.getClass());
+        T output = (T)serializerHelper.fromJson(response.getBody(), objectToPut.getClass());
 
         return output;
     }
@@ -78,7 +83,7 @@ public class RequestHelper {
 
         ResponseEntity<String> response = this.getResponse(uri, HttpMethod.PATCH, patch);
 
-        T output = SerializerHelper.fromJson(response.getBody(), clss);
+        T output = serializerHelper.fromJson(response.getBody(), clss);
 
         return output;
     }
@@ -92,15 +97,11 @@ public class RequestHelper {
     }
 
     private URI getUri(String path) {
-        URI uri = null;
-
         try {
-            uri = new URI(this.apiHost + path);
+            return new URI(this.apiHost + path);
         } catch (URISyntaxException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-
-        return uri;
     }
 
     private ResponseEntity<String> getResponse(URI uri, HttpMethod verb) {
@@ -126,7 +127,7 @@ public class RequestHelper {
                 payload = (String)objectToTransmit;
             }
             else {
-                payload = SerializerHelper.toJson(objectToTransmit);
+                payload = serializerHelper.toJson(objectToTransmit);
             }
 
             headers.setContentType(MediaType.APPLICATION_JSON);
@@ -135,25 +136,14 @@ public class RequestHelper {
 
         final HttpEntity<String> request = new HttpEntity<>(payload, headers);
 
-        try{
+        try {
             ResponseEntity<String> response = restTemplate.exchange(uri, verb, request, String.class);
 
             return response;
-        }
-        catch (HttpClientErrorException e) {
-            System.out.println(verb.name());
-            System.out.println(uri.toString());
-
-            if (payload != null)
-            {
-                String[] lines = payload.split("\\n");
-
-                for (String line : lines) {
-                    System.out.println(line);
-                }
+        } catch (HttpClientErrorException e) {
+            if (log.isDebugEnabled()) {
+                log.debug("VERB: {}\nURI: {}\nPAYLOAD:\n{}\nSTATUS CODE: {}\nRESPONSE: {}", verb, uri, payload, e.getStatusCode(), e.getResponseBodyAsString());
             }
-            System.out.println(e.getStatusCode());
-            System.out.println(e.getResponseBodyAsString());
             throw e;
         }
     }

@@ -2,9 +2,18 @@ package io.payrun.models;
 
 import io.payrun.helpers.SerializerHelper;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class LinkCollectionTest {
+
+    private SerializerHelper serializerHelper;
+
+    @BeforeEach
+    void setUp() {
+        serializerHelper = new SerializerHelper();
+    }
+
     @Test
     public void givenInstance_WhenSerialising_ThenReturnExpected(){
         LinkCollection instance = new LinkCollection();
@@ -16,7 +25,7 @@ public class LinkCollectionTest {
 
         instance.getLinks().add(child);
 
-        String result = SerializerHelper.toJson(instance);
+        String result = serializerHelper.toJson(instance);
 
         System.out.println(result);
 
@@ -26,7 +35,7 @@ public class LinkCollectionTest {
 
     @Test
     public void givenInputString_WhenDeSerialising_ThenReturnExpected(){
-        LinkCollection instance = (LinkCollection)SerializerHelper.fromJson("{\"LinkCollection\":{\"Links\":{\"Link\":[{\"@title\":\"Title\",\"@href\":\"/Employer/ER001/Employee/EE001\",\"@rel\":\"Employee\"}]}}}", LinkCollection.class);
+        LinkCollection instance = (LinkCollection)serializerHelper.fromJson("{\"LinkCollection\":{\"Links\":{\"Link\":[{\"@title\":\"Title\",\"@href\":\"/Employer/ER001/Employee/EE001\",\"@rel\":\"Employee\"}]}}}", LinkCollection.class);
 
         Assertions.assertNotNull(instance);
 

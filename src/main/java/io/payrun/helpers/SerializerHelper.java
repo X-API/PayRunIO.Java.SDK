@@ -1,49 +1,35 @@
 package io.payrun.helpers;
 
-import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-import java.io.IOException;
-
 public class SerializerHelper {
-    private static ObjectMapper mapper;
 
-    public static String toJson(Object toBeSerialised){
-        try {
-            return getMapper().writeValueAsString(toBeSerialised);
-        } catch (JsonParseException | JsonMappingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private final ObjectMapper mapper;
 
-        return null;
+    public SerializerHelper() {
+        this.mapper = new ObjectMapper();
+        this.mapper.enable(SerializationFeature.WRAP_ROOT_VALUE);
+        this.mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
+        this.mapper.enable(DeserializationFeature.UNWRAP_ROOT_VALUE);
+        this.mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
     }
 
-    public static <T extends Object> T fromJson(String json, Class<T> cls) {
+    public String toJson(Object toBeSerialised) {
         try {
-            return getMapper().readValue(json, cls);
-        } catch (JsonParseException | JsonMappingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            return mapper.writeValueAsString(toBeSerialised);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-
-        return null;
     }
 
-    private static ObjectMapper getMapper(){
-        if (mapper == null)
-        {
-            mapper = new ObjectMapper();
-            mapper.enable(SerializationFeature.WRAP_ROOT_VALUE);
-            mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-            mapper.enable(DeserializationFeature.UNWRAP_ROOT_VALUE);
+    public <T extends Object> T fromJson(String json, Class<T> cls) {
+        try {
+            return mapper.readValue(json, cls);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-
-        return mapper;
     }
 }
