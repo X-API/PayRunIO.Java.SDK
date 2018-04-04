@@ -6,7 +6,7 @@
 
     <groupId>io.payrun.sdk</groupId>
     <artifactId>sdk</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${build.number}-SNAPSHOT</version>
 
     <licenses>
         <license>
@@ -55,6 +55,7 @@
     </properties>
 
     <build>
+        <finalName>io.payrun.sdk_v${build.number}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
