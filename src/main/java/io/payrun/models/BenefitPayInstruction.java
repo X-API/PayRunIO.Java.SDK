@@ -5,19 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 
 @JsonRootName(value = "BenefitPayInstruction")
-public class BenefitPayInstruction
+public class BenefitPayInstruction extends PayInstruction
 {
-
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @JsonProperty(value="StartDate")
-    public java.util.Date startDate;
-
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @JsonProperty(value="EndDate")
-    public java.util.Date endDate;
-
-    @JsonProperty(value="Description")
-    public String description;
 
     @JsonProperty(value="Code")
     public String code;
