@@ -8,17 +8,6 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 public class SalaryPayInstruction extends PayInstruction
 {
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @JsonProperty(value="StartDate")
-    public java.util.Date startDate;
-
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @JsonProperty(value="EndDate")
-    public java.util.Date endDate;
-
-    @JsonProperty(value="Description")
-    public String description;
-
     @JsonProperty(value="AnnualSalary")
     public java.lang.Double annualSalary = 0d;;
 
