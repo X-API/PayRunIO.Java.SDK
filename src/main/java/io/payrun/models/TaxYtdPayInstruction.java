@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 
 @JsonRootName(value = "TaxYtdPayInstruction")
-public class TaxYtdPayInstruction
+public class TaxYtdPayInstruction extends PayInstruction
 {
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")

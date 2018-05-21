@@ -9,8 +9,5 @@
         <module name="sdk" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="sdk" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
