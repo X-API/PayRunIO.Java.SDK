@@ -15,6 +15,7 @@ public class SerializerHelper {
         this.mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
         this.mapper.enable(DeserializationFeature.UNWRAP_ROOT_VALUE);
         this.mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        this.mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
     public String toJson(Object toBeSerialised) {
