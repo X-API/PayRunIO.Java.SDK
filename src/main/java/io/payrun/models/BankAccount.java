@@ -16,4 +16,7 @@ public class BankAccount
 
     @JsonProperty(value="SortCode")
     public String sortCode;
+
+    @JsonProperty(value="Reference")
+    public String reference;
 }

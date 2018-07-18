@@ -51,7 +51,7 @@ public class SimplePayroll {
         System.out.println("Step 7: Get the Employee Payslip");
         final String[] employerHrefSplit = employerLink.href.split("/");
         String employerKey = employerHrefSplit[employerHrefSplit.length - 1];
-        String payslipReport = requestHelper.getRaw("/Report/PAYSLIP/run?EmployerKey=" + employerKey + "&TaxYear=2017&TaxPeriod=1");
+        String payslipReport = requestHelper.getRaw("/Report/PAYSLIP/run?EmployerKey=" + employerKey + "&TaxYear=2018&TaxPeriod=1");
         System.out.println(payslipReport);
 
         // Step 8: Review Calculation Commentary
@@ -82,11 +82,11 @@ public class SimplePayroll {
         fpsJobInstruction.rtiType = "FPS";
         fpsJobInstruction.generate = true;
         fpsJobInstruction.transmit = true;
-        fpsJobInstruction.taxYear = 2017;
+        fpsJobInstruction.taxYear = 2018;
         fpsJobInstruction.employer = employerLink;
         fpsJobInstruction.paySchedule = payScheduleLink;
-        fpsJobInstruction.paymentDate = createDate("2017-04-30");
-        fpsJobInstruction.timestamp = createDate("2017-04-30");
+        fpsJobInstruction.paymentDate = createDate("2018-04-30");
+        fpsJobInstruction.timestamp = createDate("2018-04-30");
         return fpsJobInstruction;
     }
 
@@ -121,16 +121,16 @@ public class SimplePayroll {
 
     private PayRunJobInstruction createPayRunJobInstruction(Link payScheduleLink) {
         PayRunJobInstruction payRunJob = new PayRunJobInstruction();
-        payRunJob.paymentDate = createDate("2017-04-30");
-        payRunJob.startDate = createDate("2017-04-01");
-        payRunJob.endDate = createDate("2017-04-30");
+        payRunJob.paymentDate = createDate("2018-04-30");
+        payRunJob.startDate = createDate("2018-04-01");
+        payRunJob.endDate = createDate("2018-04-30");
         payRunJob.paySchedule = payScheduleLink;
         return payRunJob;
     }
 
     private SalaryPayInstruction createSalaryPayInstruction() {
         SalaryPayInstruction salaryPayInstruction = new SalaryPayInstruction();
-        salaryPayInstruction.startDate = createDate("2017-04-01");
+        salaryPayInstruction.startDate = createDate("2018-04-01");
         salaryPayInstruction.annualSalary = Double.valueOf(25000.00);;
         return salaryPayInstruction;
     }
@@ -139,7 +139,7 @@ public class SimplePayroll {
         Employee employee = new Employee();
 
         employee.revision = 0;
-        employee.effectiveDate = createDate("2017-04-06");
+        employee.effectiveDate = createDate("2018-04-01");
         employee.code = "EMP001";
         employee.title = "Mr";
         employee.firstName = "Terry";
@@ -153,7 +153,7 @@ public class SimplePayroll {
         employee.region = CalculatorRegion.England;
         employee.territory = CalculatorTerritory.UnitedKingdom;
         employee.paySchedule = payScheduleLink;
-        employee.startDate = createDate("2017-04-06");
+        employee.startDate = createDate("2018-04-06");
         employee.starterDeclaration = StarterDeclaration.A;
         employee.ruleExclusions = RuleExclusionFlags.None.toString();
         employee.workingWeek = WorkingWeek.AllWeekDays.toString();
@@ -193,7 +193,7 @@ public class SimplePayroll {
         Employer employer = new Employer();
 
         employer.revision = 0;
-        employer.effectiveDate = createDate("2017-01-01");
+        employer.effectiveDate = createDate("2018-01-01");
         employer.name = "Getting Started Co Ltd";
         employer.bacsServiceUserNumber = "123456";
         employer.ruleExclusions = RuleExclusionFlags.None.toString();

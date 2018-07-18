@@ -23,6 +23,10 @@ public class PayRun
     @JsonProperty(value="PeriodEnd")
     public java.util.Date periodEnd;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonProperty(value="Executed")
+    public java.util.Date executed;
+
     @JsonProperty(value="TaxYear")
     public java.lang.Short taxYear;
 

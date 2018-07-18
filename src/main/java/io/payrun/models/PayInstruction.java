@@ -4,7 +4,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 
-public abstract class PayInstruction
+@JsonRootName(value = "PayInstruction")
+public class PayInstruction
 {
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -17,4 +18,7 @@ public abstract class PayInstruction
 
     @JsonProperty(value="Description")
     public String description;
+
+    @JsonProperty(value="PayLineTag")
+    public String payLineTag;
 }

@@ -18,7 +18,7 @@ public class BenefitPayInstruction extends PayInstruction
     public java.lang.Double employeeContribution = 0d;;
 
     @JsonProperty(value="CashEquivalent")
-    public java.lang.Double cashEquivalent = 0d;;
+    public java.lang.Double cashEquivalent;
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;
