@@ -10,4 +10,7 @@ public class RenderIndex extends SingularOutputBase
 
     @JsonProperty(value="@Output")
     public OutputType output = OutputType.Element;
+
+    @JsonProperty(value="@MaxLength")
+    public String maxLength;
 }

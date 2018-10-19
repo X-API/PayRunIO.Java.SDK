@@ -11,6 +11,9 @@ public class RenderNextDate extends SingularOutputBase
     @JsonProperty(value="@Output")
     public OutputType output = OutputType.Element;
 
+    @JsonProperty(value="@MaxLength")
+    public String maxLength;
+
     @JsonProperty(value="@Name")
     public String name;
 

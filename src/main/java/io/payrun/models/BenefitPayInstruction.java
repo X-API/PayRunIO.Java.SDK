@@ -22,4 +22,8 @@ public class BenefitPayInstruction extends PayInstruction
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonProperty(value="BenefitEndDate")
+    public java.util.Date benefitEndDate;
 }

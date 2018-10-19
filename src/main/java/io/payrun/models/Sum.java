@@ -11,6 +11,9 @@ public class Sum extends AggregateOutputBase
     @JsonProperty(value="@Output")
     public OutputType output = OutputType.Element;
 
+    @JsonProperty(value="@MaxLength")
+    public String maxLength;
+
     @JsonProperty(value="@Name")
     public String name;
 

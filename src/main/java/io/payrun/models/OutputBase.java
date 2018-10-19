@@ -10,4 +10,7 @@ public abstract class OutputBase
 
     @JsonProperty(value="@Output")
     public OutputType output = OutputType.Element;
+
+    @JsonProperty(value="@MaxLength")
+    public String maxLength;
 }
