@@ -10,7 +10,8 @@ public class Application {
                     new RequestHelper(
                             "https://api.test.payrun.io",
                             "ozPpjEMEPUJ6genpa2lw",
-                            "Vj7fC5oh02u2g0Hm4pEXA6crI57lh9UiHC0wPg6lQyg");
+                            "Vj7fC5oh02u2g0Hm4pEXA6crI57lh9UiHC0wPg6lQyg",
+                            "18.19.1.481");
 
             SimplePayroll simplePayroll = new SimplePayroll();
 
@@ -20,5 +21,4 @@ public class Application {
             e.printStackTrace();
         }
     }
-
 }
