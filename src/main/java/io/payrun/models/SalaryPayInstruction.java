@@ -13,4 +13,7 @@ public class SalaryPayInstruction extends PayInstruction
 
     @JsonProperty(value="ProRataMethod")
     public ProRataMethod proRataMethod = ProRataMethod.NotSet;
+
+    @JsonProperty(value="RoundingOption")
+    public RoundingOption roundingOption;
 }

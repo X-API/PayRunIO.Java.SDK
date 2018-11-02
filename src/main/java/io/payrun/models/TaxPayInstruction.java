@@ -13,4 +13,7 @@ public class TaxPayInstruction extends PayInstruction
 
     @JsonProperty(value="TaxCode")
     public String taxCode;
+
+    @JsonProperty(value="WithholdRefund")
+    public Boolean withholdRefund;
 }

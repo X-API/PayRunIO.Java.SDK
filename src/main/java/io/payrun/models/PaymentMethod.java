@@ -1,5 +1,5 @@
 package io.payrun.models;
 
 public enum PaymentMethod{
-NotSet,Cash,Cheque,BACS
+NotSet,Cash,Cheque,BACS,FasterPayments,Other
 }

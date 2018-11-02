@@ -63,6 +63,9 @@ public class Pension
     @JsonProperty(value="ProRataMethod")
     public ProRataMethod proRataMethod = ProRataMethod.NotSet;
 
+    @JsonProperty(value="RoundingOption")
+    public RoundingOption roundingOption = RoundingOption.NotSet;
+
     @JsonProperty(value="AECompatible")
     public Boolean aECompatible = false;
 

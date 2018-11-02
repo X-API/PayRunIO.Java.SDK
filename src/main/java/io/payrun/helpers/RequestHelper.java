@@ -21,12 +21,23 @@ public class RequestHelper {
     private final String apiHost;
     private final String consumerKey;
     private final String consumerSecret;
+    private final String apiVersion;
     private final SerializerHelper serializerHelper;
+
+    public RequestHelper(String apiHost, String clientKey, String clientSecret, String apiVerion)
+    {
+        this.apiHost = apiHost;
+        this.consumerKey = clientKey;
+        this.consumerSecret = clientSecret;
+        this.apiVersion = apiVerion;
+        this.serializerHelper = new SerializerHelper();
+    }
 
     public RequestHelper(String apiHost, String clientKey, String clientSecret){
         this.apiHost = apiHost;
         this.consumerKey = clientKey;
         this.consumerSecret = clientSecret;
+        this.apiVersion = "default";
         this.serializerHelper = new SerializerHelper();
     }
 
@@ -116,6 +127,7 @@ public class RequestHelper {
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", headerValue);
+        headers.add("Api-Version", this.apiVersion);
         headers.setAccept(singletonList(MediaType.APPLICATION_JSON));
 
         RestTemplate restTemplate = new RestTemplate();

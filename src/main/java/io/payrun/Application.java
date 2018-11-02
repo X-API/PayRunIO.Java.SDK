@@ -9,8 +9,8 @@ public class Application {
             RequestHelper request =
                     new RequestHelper(
                             "https://api.test.payrun.io",
-                            "KNCt4JAGnEiNK4HSo0bQpg",
-                            "ZzHT9u2Ee0uuVb5Y5nJwASHCnGYpwdUurQYMXCn2zow");
+                            "ozPpjEMEPUJ6genpa2lw",
+                            "Vj7fC5oh02u2g0Hm4pEXA6crI57lh9UiHC0wPg6lQyg");
 
             SimplePayroll simplePayroll = new SimplePayroll();
 
