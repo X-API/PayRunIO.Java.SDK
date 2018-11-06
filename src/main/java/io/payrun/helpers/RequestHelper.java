@@ -24,12 +24,12 @@ public class RequestHelper {
     private final String apiVersion;
     private final SerializerHelper serializerHelper;
 
-    public RequestHelper(String apiHost, String clientKey, String clientSecret, String apiVerion)
+    public RequestHelper(String apiHost, String clientKey, String clientSecret, String apiVersion)
     {
         this.apiHost = apiHost;
         this.consumerKey = clientKey;
         this.consumerSecret = clientSecret;
-        this.apiVersion = apiVerion;
+        this.apiVersion = apiVersion;
         this.serializerHelper = new SerializerHelper();
     }
 
