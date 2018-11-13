@@ -19,4 +19,7 @@ public class RatePayInstruction extends PayInstruction
 
     @JsonProperty(value="Units")
     public java.lang.Double units = 0d;;
+
+    @JsonProperty(value="RoundingOption")
+    public RoundingOption roundingOption;
 }

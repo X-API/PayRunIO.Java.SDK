@@ -156,6 +156,7 @@ public class RequestHelper {
             if (log.isDebugEnabled()) {
                 log.debug("VERB: {}\nURI: {}\nPAYLOAD:\n{}\nSTATUS CODE: {}\nRESPONSE: {}", verb, uri, payload, e.getStatusCode(), e.getResponseBodyAsString());
             }
+
             throw e;
         }
     }

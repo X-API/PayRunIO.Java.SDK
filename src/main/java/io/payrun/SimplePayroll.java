@@ -7,13 +7,16 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
+import java.util.UUID;
 
 public class SimplePayroll {
     public void Execute(RequestHelper requestHelper) {
         // Step 1: Create employer
         System.out.println("Step 1: Create employer");
         Employer employer = createEmployer();
-        Link employerLink = requestHelper.post("/Employers", employer);
+        Link employerLink = new Link();
+        employerLink.href = "/Employer/" + UUID.randomUUID().toString();
+        requestHelper.put(employerLink.href, employer);
         System.out.format("CREATED: %s - %s\n", employerLink.title, employerLink.href);
 
         // Step 2: Create pay schedule

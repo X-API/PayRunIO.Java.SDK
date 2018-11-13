@@ -29,32 +29,17 @@ public class NiYtdPayInstruction extends PayInstruction
     @JsonProperty(value="PTtoST")
     public java.lang.Double pTtoST = 0d;;
 
-    @JsonProperty(value="STtoUAP")
-    public java.lang.Double sTtoUAP = 0d;;
+    @JsonProperty(value="STtoUST")
+    public java.lang.Double sTtoUST = 0d;;
 
-    @JsonProperty(value="STtoUEL")
-    public java.lang.Double sTtoUEL = 0d;;
+    @JsonProperty(value="STtoAUST")
+    public java.lang.Double sTtoAUST = 0d;;
 
-    @JsonProperty(value="UAPtoUEL")
-    public java.lang.Double uAPtoUEL = 0d;;
+    @JsonProperty(value="USTtoUEL")
+    public java.lang.Double uSTtoUEL = 0d;;
 
-    @JsonProperty(value="UELtoUST")
-    public java.lang.Double uELtoUST = 0d;;
-
-    @JsonProperty(value="UELtoAUST")
-    public java.lang.Double uELtoAUST = 0d;;
-
-    @JsonProperty(value="AboveUST")
-    public java.lang.Double aboveUST = 0d;;
-
-    @JsonProperty(value="AboveAUST")
-    public java.lang.Double aboveAUST = 0d;;
-
-    @JsonProperty(value="RebateEE")
-    public java.lang.Double rebateEE = 0d;;
-
-    @JsonProperty(value="RebateER")
-    public java.lang.Double rebateER = 0d;;
+    @JsonProperty(value="AboveUEL")
+    public java.lang.Double aboveUEL = 0d;;
 
     @JsonProperty(value="DirCalculationMethod")
     public DirCalculationMethod dirCalculationMethod = DirCalculationMethod.Off;

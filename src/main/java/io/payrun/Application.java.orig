@@ -11,7 +11,11 @@ public class Application {
                             "https://api.test.payrun.io",
                             "ozPpjEMEPUJ6genpa2lw",
                             "Vj7fC5oh02u2g0Hm4pEXA6crI57lh9UiHC0wPg6lQyg",
+<<<<<<< HEAD
                             "default");
+=======
+                            "18.19.1.481");
+>>>>>>> ni-bands
 
             SimplePayroll simplePayroll = new SimplePayroll();
 
