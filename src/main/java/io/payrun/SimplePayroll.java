@@ -55,7 +55,7 @@ public class SimplePayroll {
         System.out.println("Step 7: Get the Employee Payslip");
         final String[] employerHrefSplit = employerLink.href.split("/");
         String employerKey = employerHrefSplit[employerHrefSplit.length - 1];
-        String payslipReport = requestHelper.getRaw("/Report/PAYSLIP/run?EmployerKey=" + employerKey + "&TaxYear=2018&TaxPeriod=1");
+        String payslipReport = requestHelper.getRaw("/Report/PAYSLIP3/run?EmployerKey=" + employerKey + "&PayScheduleKey=SCH001&TaxYear=2018&PaymentDate=2018-04-30");
         System.out.println(payslipReport);
 
         // Step 8: Review Calculation Commentary
@@ -65,7 +65,7 @@ public class SimplePayroll {
 
         // Step 9: Create RTI FPS submission Job
         System.out.println("Step 9: Create RTI FPS submission Job");
-        RtiJobInstruction fpsJobInstruction = createRtiJobInstruction(employerLink, payScheduleLink);
+        RtiFpsJobInstruction fpsJobInstruction = createFpsJobInstruction(employerLink, payScheduleLink);
         Link fpsJobInfoLink = requestHelper.post("/jobs/rti", fpsJobInstruction);
 
         // Step 10: Query RTI Job Status
@@ -81,16 +81,15 @@ public class SimplePayroll {
         System.out.println(fpsTransaction.responseData.value);
     }
 
-    private RtiJobInstruction createRtiJobInstruction(Link employerLink, Link payScheduleLink) {
-        RtiJobInstruction fpsJobInstruction = new RtiJobInstruction();
-        fpsJobInstruction.rtiType = "FPS";
+    private RtiFpsJobInstruction createFpsJobInstruction(Link employerLink, Link payScheduleLink) {
+        RtiFpsJobInstruction fpsJobInstruction = new RtiFpsJobInstruction();
         fpsJobInstruction.generate = true;
         fpsJobInstruction.transmit = true;
         fpsJobInstruction.taxYear = 2018;
         fpsJobInstruction.employer = employerLink;
         fpsJobInstruction.paySchedule = payScheduleLink;
         fpsJobInstruction.paymentDate = createDate("2018-04-30");
-        fpsJobInstruction.timestamp = createDate("2018-04-30");
+        fpsJobInstruction.timestamp = createDate("2018-04-30T12:00:00", true);
         return fpsJobInstruction;
     }
 
@@ -234,8 +233,15 @@ public class SimplePayroll {
 
     private Date createDate(String dateAsString)
     {
+        return createDate(dateAsString, false);
+    }
+
+    private Date createDate(String dateAsString, boolean includeTime)
+    {
         try {
-            final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            final String pattern = includeTime ? "yyyy-MM-dd'T'HH:mm:ss" : "yyyy-MM-dd";
+
+            final SimpleDateFormat dateFormat = new SimpleDateFormat(pattern);
             dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
 
             final Date date = dateFormat.parse(dateAsString);

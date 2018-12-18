@@ -23,6 +23,7 @@ public class RtiJobInstruction
     @JsonProperty(value="Employer")
     public Link employer;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
     @JsonProperty(value="Timestamp")
     public java.util.Date timestamp;
 
