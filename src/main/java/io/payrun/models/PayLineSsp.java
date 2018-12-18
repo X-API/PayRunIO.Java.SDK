@@ -17,7 +17,7 @@ public class PayLineSsp extends PayLine
     public java.util.Date absenceEnd;
 
     @JsonProperty(value="AverageWeeklyEarnings")
-    public java.lang.Double averageWeeklyEarnings = 0d;;
+    public java.math.BigDecimal averageWeeklyEarnings = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="WaitingDaysServed")
     public java.lang.Integer waitingDaysServed;
@@ -26,10 +26,10 @@ public class PayLineSsp extends PayLine
     public java.lang.Integer qualifyingDays;
 
     @JsonProperty(value="DailyRate")
-    public java.lang.Double dailyRate = 0d;;
+    public java.math.BigDecimal dailyRate = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="WeeksUsed")
-    public java.lang.Double weeksUsed = 0d;;
+    public java.math.BigDecimal weeksUsed = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="ExclusionReason")
     public SspExclusionReason exclusionReason = SspExclusionReason.None;

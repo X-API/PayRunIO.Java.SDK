@@ -37,10 +37,16 @@ public class PayCode
     public SystemCodeType type = SystemCodeType.NotSet;
 
     @JsonProperty(value="Benefit")
-    public Boolean benefit = false;
+    public Boolean benefit;
+
+    @JsonProperty(value="Notional")
+    public Boolean notional;
+
+    @JsonProperty(value="NonArrestable")
+    public Boolean nonArrestable;
 
     @JsonProperty(value="Readonly")
-    public Boolean readonly = false;
+    public Boolean readonly;
 
     @JsonProperty(value="NominalCode")
     public Link nominalCode;

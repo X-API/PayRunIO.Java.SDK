@@ -12,13 +12,13 @@ public class BenefitPayInstruction extends PayInstruction
     public String code;
 
     @JsonProperty(value="TotalCost")
-    public java.lang.Double totalCost = 0d;;
+    public java.math.BigDecimal totalCost = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="EmployeeContribution")
-    public java.lang.Double employeeContribution = 0d;;
+    public java.math.BigDecimal employeeContribution = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="CashEquivalent")
-    public java.lang.Double cashEquivalent;
+    public java.math.BigDecimal cashEquivalent;
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;

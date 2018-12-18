@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -104,7 +105,7 @@ public class EmployeeTest {
         employee.initials = "TTT";
         employee.passportNumber = "TES0123456789TEST";
         employee.gender = Gender.Male;
-        employee.hoursPerWeek = Double.valueOf(37.5);
+        employee.hoursPerWeek = new BigDecimal(37.5);
         employee.irregularEmployment = false;
         employee.isAgencyWorker = false;
         employee.leaverReason = LeaverReason.Other;

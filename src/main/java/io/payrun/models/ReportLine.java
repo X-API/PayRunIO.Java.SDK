@@ -9,7 +9,7 @@ public class ReportLine
 {
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = 0d;;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="Description")
     public String description;

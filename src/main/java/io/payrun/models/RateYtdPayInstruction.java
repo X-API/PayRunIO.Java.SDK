@@ -12,16 +12,16 @@ public class RateYtdPayInstruction extends PayInstruction
     public String code;
 
     @JsonProperty(value="Rate")
-    public java.lang.Double rate = 0d;;
+    public java.math.BigDecimal rate = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="RateUoM")
     public UomBasicPay rateUoM = UomBasicPay.NotSet;
 
     @JsonProperty(value="Units")
-    public java.lang.Double units = 0d;;
+    public java.math.BigDecimal units = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = 0d;;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;

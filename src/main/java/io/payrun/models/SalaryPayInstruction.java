@@ -9,7 +9,7 @@ public class SalaryPayInstruction extends PayInstruction
 {
 
     @JsonProperty(value="AnnualSalary")
-    public java.lang.Double annualSalary = 0d;;
+    public java.math.BigDecimal annualSalary = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="ProRataMethod")
     public ProRataMethod proRataMethod = ProRataMethod.NotSet;

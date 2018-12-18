@@ -37,7 +37,7 @@ public class Employer
     public Boolean claimSmallEmployerRelief = false;
 
     @JsonProperty(value="ApprenticeshipLevyAllowance")
-    public java.lang.Double apprenticeshipLevyAllowance = 0d;;
+    public java.math.BigDecimal apprenticeshipLevyAllowance = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="Address")
     public Address address;

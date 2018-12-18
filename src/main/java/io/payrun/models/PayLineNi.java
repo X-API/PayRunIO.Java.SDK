@@ -9,28 +9,28 @@ public class PayLineNi extends PayLine
 {
 
     @JsonProperty(value="LEL")
-    public java.lang.Double lEL = 0d;;
+    public java.math.BigDecimal lEL = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="LELtoPT")
-    public java.lang.Double lELtoPT = 0d;;
+    public java.math.BigDecimal lELtoPT = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="PTtoST")
-    public java.lang.Double pTtoST = 0d;;
+    public java.math.BigDecimal pTtoST = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="STtoUST")
-    public java.lang.Double sTtoUST = 0d;;
+    public java.math.BigDecimal sTtoUST = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="STtoAUST")
-    public java.lang.Double sTtoAUST = 0d;;
+    public java.math.BigDecimal sTtoAUST = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="USTtoUEL")
-    public java.lang.Double uSTtoUEL = 0d;;
+    public java.math.BigDecimal uSTtoUEL = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="AboveUEL")
-    public java.lang.Double aboveUEL = 0d;;
+    public java.math.BigDecimal aboveUEL = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="EmployerNI")
-    public java.lang.Double employerNI = 0d;;
+    public java.math.BigDecimal employerNI = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="DirCalculationMethod")
     public DirCalculationMethod dirCalculationMethod = DirCalculationMethod.Off;
@@ -39,7 +39,7 @@ public class PayLineNi extends PayLine
     public String niLetter;
 
     @JsonProperty(value="NiablePay")
-    public java.lang.Double niablePay = 0d;;
+    public java.math.BigDecimal niablePay = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="WeeksAsDirector")
     public java.lang.Integer weeksAsDirector;

@@ -23,47 +23,47 @@ public class OpeningBalanceReportingInstruction
     public java.lang.Short taxMonth;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = 0d;;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="EmploymentAllowanceClaimed")
-    public java.lang.Double employmentAllowanceClaimed = 0d;;
+    public java.math.BigDecimal employmentAllowanceClaimed = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="Tax")
-    public java.lang.Double tax = 0d;;
+    public java.math.BigDecimal tax = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="StudentLoan")
-    public java.lang.Double studentLoan = 0d;;
+    public java.math.BigDecimal studentLoan = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="EmployerNI")
-    public java.lang.Double employerNI = 0d;;
+    public java.math.BigDecimal employerNI = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="EmployeeNI")
-    public java.lang.Double employeeNI = 0d;;
+    public java.math.BigDecimal employeeNI = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="SmpRecovered")
-    public java.lang.Double smpRecovered = 0d;;
+    public java.math.BigDecimal smpRecovered = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="SmpComp")
-    public java.lang.Double smpComp = 0d;;
+    public java.math.BigDecimal smpComp = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="SppRecovered")
-    public java.lang.Double sppRecovered = 0d;;
+    public java.math.BigDecimal sppRecovered = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="SppComp")
-    public java.lang.Double sppComp = 0d;;
+    public java.math.BigDecimal sppComp = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="ShppRecovered")
-    public java.lang.Double shppRecovered = 0d;;
+    public java.math.BigDecimal shppRecovered = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="ShppComp")
-    public java.lang.Double shppComp = 0d;;
+    public java.math.BigDecimal shppComp = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="SapRecovered")
-    public java.lang.Double sapRecovered = 0d;;
+    public java.math.BigDecimal sapRecovered = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="SapComp")
-    public java.lang.Double sapComp = 0d;;
+    public java.math.BigDecimal sapComp = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="AmountPaid")
-    public java.lang.Double amountPaid = 0d;;
+    public java.math.BigDecimal amountPaid = new java.math.BigDecimal(0);;
 }

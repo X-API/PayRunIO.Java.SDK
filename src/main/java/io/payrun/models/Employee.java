@@ -83,7 +83,7 @@ public class Employee
     public Address address;
 
     @JsonProperty(value="HoursPerWeek")
-    public java.lang.Double hoursPerWeek = 0d;;
+    public java.math.BigDecimal hoursPerWeek = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="PassportNumber")
     public String passportNumber;

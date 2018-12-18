@@ -36,19 +36,19 @@ public class CisLine
     public UomBasicPay uOM;
 
     @JsonProperty(value="Units")
-    public java.lang.Double units;
+    public java.math.BigDecimal units;
 
     @JsonProperty(value="UnitRate")
-    public java.lang.Double unitRate;
+    public java.math.BigDecimal unitRate;
 
     @JsonProperty(value="VAT")
-    public java.lang.Double vAT;
+    public java.math.BigDecimal vAT;
 
     @JsonProperty(value="GrossPay")
-    public java.lang.Double grossPay = 0d;;
+    public java.math.BigDecimal grossPay = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="CisDeduction")
-    public java.lang.Double cisDeduction = 0d;;
+    public java.math.BigDecimal cisDeduction = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="Description")
     public String description;

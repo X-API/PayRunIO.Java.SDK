@@ -23,7 +23,7 @@ public class AEAssessment
     public java.util.Date assessmentDate;
 
     @JsonProperty(value="QualifyingEarnings")
-    public java.lang.Double qualifyingEarnings = 0d;;
+    public java.math.BigDecimal qualifyingEarnings = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="AssessmentCode")
     public AEAssessmentCode assessmentCode = AEAssessmentCode.Excluded;

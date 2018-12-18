@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
 import java.util.Calendar;
 
 public class RatePayInstructionTest {
@@ -20,9 +21,9 @@ public class RatePayInstructionTest {
     public void givenRatePayInstructionInstance_WhenSerialising_ThenExpectedJsonCreated() throws Exception {
         RatePayInstruction ratePayInstruction1 = new RatePayInstruction();
         ratePayInstruction1.code = "code";
-        ratePayInstruction1.rate = 12.2;
+        ratePayInstruction1.rate = new BigDecimal(12.2);
         ratePayInstruction1.rateUoM = UomBasicPay.Day;
-        ratePayInstruction1.units = 32.3;
+        ratePayInstruction1.units = new BigDecimal(32.3);
         ratePayInstruction1.description = "description";
 
         Calendar cal = Calendar.getInstance();

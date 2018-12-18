@@ -23,26 +23,26 @@ public class AoePayInstruction extends PayInstruction
     public java.util.Date stopDate;
 
     @JsonProperty(value="TotalToPay")
-    public java.lang.Double totalToPay;
+    public java.math.BigDecimal totalToPay;
 
     @JsonProperty(value="PreviousPayments")
-    public java.lang.Double previousPayments;
+    public java.math.BigDecimal previousPayments;
 
     @JsonProperty(value="PreviousArrears")
-    public java.lang.Double previousArrears;
+    public java.math.BigDecimal previousArrears;
 
     @JsonProperty(value="ClaimAdminFee")
     public Boolean claimAdminFee = false;
 
     @JsonProperty(value="ProtectedEarningsAmount")
-    public java.lang.Double protectedEarningsAmount;
+    public java.math.BigDecimal protectedEarningsAmount;
 
     @JsonProperty(value="DeductionAmount")
-    public java.lang.Double deductionAmount;
+    public java.math.BigDecimal deductionAmount;
 
     @JsonProperty(value="ProtectedEarningsPercentage")
-    public java.lang.Double protectedEarningsPercentage;
+    public java.math.BigDecimal protectedEarningsPercentage;
 
     @JsonProperty(value="DeductionPercentage")
-    public java.lang.Double deductionPercentage;
+    public java.math.BigDecimal deductionPercentage;
 }

@@ -12,30 +12,30 @@ public class PayLinePension extends PayLine
     public PensionTaxationMethod taxationMethod = PensionTaxationMethod.NotSet;
 
     @JsonProperty(value="EmployerContribution")
-    public java.lang.Double employerContribution = 0d;;
+    public java.math.BigDecimal employerContribution = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="PensionablePay")
-    public java.lang.Double pensionablePay = 0d;;
+    public java.math.BigDecimal pensionablePay = new java.math.BigDecimal(0);;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="ContributionDeductionDate")
     public java.util.Date contributionDeductionDate;
 
     @JsonProperty(value="EmployerContributionPercent")
-    public java.lang.Double employerContributionPercent;
+    public java.math.BigDecimal employerContributionPercent;
 
     @JsonProperty(value="EmployeeContributionPercent")
-    public java.lang.Double employeeContributionPercent;
+    public java.math.BigDecimal employeeContributionPercent;
 
     @JsonProperty(value="EmployeeAdditionalVoluntaryCash")
-    public java.lang.Double employeeAdditionalVoluntaryCash;
+    public java.math.BigDecimal employeeAdditionalVoluntaryCash;
 
     @JsonProperty(value="EmployeeAdditionalVoluntaryPercent")
-    public java.lang.Double employeeAdditionalVoluntaryPercent;
+    public java.math.BigDecimal employeeAdditionalVoluntaryPercent;
 
     @JsonProperty(value="EmployerContributionCash")
-    public java.lang.Double employerContributionCash;
+    public java.math.BigDecimal employerContributionCash;
 
     @JsonProperty(value="EmployeeContributionCash")
-    public java.lang.Double employeeContributionCash;
+    public java.math.BigDecimal employeeContributionCash;
 }

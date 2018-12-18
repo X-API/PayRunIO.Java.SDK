@@ -12,5 +12,5 @@ public class PayLineAoe extends PayLine
     public String caseNumber;
 
     @JsonProperty(value="Arrears")
-    public java.lang.Double arrears = 0d;;
+    public java.math.BigDecimal arrears = new java.math.BigDecimal(0);;
 }

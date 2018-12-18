@@ -6,7 +6,19 @@
 
     <groupId>io.payrun.sdk</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.5.0-SNAPSHOT</version>
+    <version>0.6.0</version>
+    <name>PayRun.io.JavaSDK</name>
+    <url>https://github.com/X-API/PayRunIO.Java.SDK</url>
+    <description>Java SDK for accessing the UK Payroll API - PayRun.io</description>
+
+    <developers>
+        <developer>
+            <email>Crispin.Parker@payrun.io</email>
+            <name>Crispin Parker</name>
+            <url>https://github.com/CrispinParker</url>
+            <id>CrispinParker</id>
+        </developer>
+    </developers>
 
     <licenses>
         <license>
@@ -142,7 +154,7 @@
                             <goal>sign</goal>
                         </goals>
                         <configuration>
-                            <keyname>KEY_NAME_HERE</keyname>
+                            <keyname>support@payrun.io</keyname>
                         </configuration>
                     </execution>
                 </executions>

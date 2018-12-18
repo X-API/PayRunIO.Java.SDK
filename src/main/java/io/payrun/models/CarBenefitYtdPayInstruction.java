@@ -12,10 +12,10 @@ public class CarBenefitYtdPayInstruction extends PayInstruction
     public String code;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = 0d;;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="TaxableAmount")
-    public java.lang.Double taxableAmount = 0d;;
+    public java.math.BigDecimal taxableAmount = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;
@@ -24,10 +24,10 @@ public class CarBenefitYtdPayInstruction extends PayInstruction
     public Boolean isAdjustment = false;
 
     @JsonProperty(value="TaxableVehicle")
-    public java.lang.Double taxableVehicle = 0d;;
+    public java.math.BigDecimal taxableVehicle = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="TaxableFuel")
-    public java.lang.Double taxableFuel = 0d;;
+    public java.math.BigDecimal taxableFuel = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="VehicleRegistration")
     public String vehicleRegistration;

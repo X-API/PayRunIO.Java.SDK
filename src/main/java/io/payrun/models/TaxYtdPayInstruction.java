@@ -9,10 +9,10 @@ public class TaxYtdPayInstruction extends PayInstruction
 {
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = 0d;;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="TaxablePay")
-    public java.lang.Double taxablePay = 0d;;
+    public java.math.BigDecimal taxablePay = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="TaxCode")
     public String taxCode;

@@ -20,7 +20,7 @@ public class ShppPayInstruction extends PayInstruction
     public Boolean statutoryOffset = false;
 
     @JsonProperty(value="AverageWeeklyEarningOverride")
-    public java.lang.Double averageWeeklyEarningOverride;
+    public java.math.BigDecimal averageWeeklyEarningOverride;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="BabyDueDate")

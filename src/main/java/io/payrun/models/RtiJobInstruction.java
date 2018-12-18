@@ -11,9 +11,6 @@ public class RtiJobInstruction
     @JsonProperty(value="HoldingDate")
     public java.util.Date holdingDate;
 
-    @JsonProperty(value="RtiType")
-    public String rtiType;
-
     @JsonProperty(value="Generate")
     public Boolean generate = false;
 
@@ -28,6 +25,9 @@ public class RtiJobInstruction
 
     @JsonProperty(value="Timestamp")
     public java.util.Date timestamp;
+
+    @JsonProperty(value="RtiType")
+    public String rtiType;
 
     @JsonProperty(value="PaySchedule")
     public Link paySchedule;

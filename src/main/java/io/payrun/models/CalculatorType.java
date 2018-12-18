@@ -1,5 +1,5 @@
 package io.payrun.models;
 
 public enum CalculatorType{
-Primitive,Tax,NationalInsurance,StudentLoan,Salary,StatutorySickPay,StatutoryMaternityPay,StatutoryPaternityPay,StatutoryAdoptionPay,StatutorySharedParentalPay,PensionNetBased,Benefit,YearToDate,BasicPay,P45,PensionSalarySacrifice,PensionReliefAtSource,AttachmentOfEarnings,CarBenefit,Loan
+Primitive,Tax,NationalInsurance,StudentLoan,Salary,StatutorySickPay,StatutoryMaternityPay,StatutoryPaternityPay,StatutoryAdoptionPay,StatutorySharedParentalPay,PensionNetBased,Benefit,YearToDate,BasicPay,P45,PensionSalarySacrifice,PensionReliefAtSource,AttachmentOfEarnings,CarBenefit,Loan,HolidayScheme,NetToGross
 }

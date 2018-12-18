@@ -20,7 +20,7 @@ public class SppPayInstruction extends PayInstruction
     public Boolean statutoryOffset = false;
 
     @JsonProperty(value="AverageWeeklyEarningOverride")
-    public java.lang.Double averageWeeklyEarningOverride;
+    public java.math.BigDecimal averageWeeklyEarningOverride;
 
     @JsonProperty(value="PayPartWeek")
     public Boolean payPartWeek = false;

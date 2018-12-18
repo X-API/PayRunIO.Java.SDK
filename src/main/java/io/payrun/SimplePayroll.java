@@ -3,6 +3,7 @@ package io.payrun;
 import io.payrun.helpers.RequestHelper;
 import io.payrun.models.*;
 
+import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -134,7 +135,7 @@ public class SimplePayroll {
     private SalaryPayInstruction createSalaryPayInstruction() {
         SalaryPayInstruction salaryPayInstruction = new SalaryPayInstruction();
         salaryPayInstruction.startDate = createDate("2018-04-01");
-        salaryPayInstruction.annualSalary = Double.valueOf(25000.00);;
+        salaryPayInstruction.annualSalary = new BigDecimal(25000.00);
         return salaryPayInstruction;
     }
 
@@ -169,7 +170,7 @@ public class SimplePayroll {
         employee.address.postcode = "TE1 1ST";
         employee.address.country = "United Kingdom";
 
-        employee.hoursPerWeek = Double.valueOf(40);;
+        employee.hoursPerWeek = new BigDecimal(40);
         employee.passportNumber = "123457890";
         employee.bankAccount = new BankAccount();
         employee.bankAccount.accountName = "Mr T Tester";

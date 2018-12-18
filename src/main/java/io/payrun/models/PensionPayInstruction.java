@@ -12,28 +12,28 @@ public class PensionPayInstruction extends PayInstruction
     public String code;
 
     @JsonProperty(value="EmployeeContributionCash")
-    public java.lang.Double employeeContributionCash;
+    public java.math.BigDecimal employeeContributionCash;
 
     @JsonProperty(value="EmployerContributionCash")
-    public java.lang.Double employerContributionCash;
+    public java.math.BigDecimal employerContributionCash;
 
     @JsonProperty(value="EmployeeContributionPercent")
-    public java.lang.Double employeeContributionPercent;
+    public java.math.BigDecimal employeeContributionPercent;
 
     @JsonProperty(value="EmployerContributionPercent")
-    public java.lang.Double employerContributionPercent;
+    public java.math.BigDecimal employerContributionPercent;
 
     @JsonProperty(value="AdditionalVoluntaryContributionCash")
-    public java.lang.Double additionalVoluntaryContributionCash;
+    public java.math.BigDecimal additionalVoluntaryContributionCash;
 
     @JsonProperty(value="AdditionalVoluntaryContributionPercent")
-    public java.lang.Double additionalVoluntaryContributionPercent;
+    public java.math.BigDecimal additionalVoluntaryContributionPercent;
 
     @JsonProperty(value="LowerThreshold")
-    public java.lang.Double lowerThreshold;
+    public java.math.BigDecimal lowerThreshold;
 
     @JsonProperty(value="UpperThreshold")
-    public java.lang.Double upperThreshold;
+    public java.math.BigDecimal upperThreshold;
 
     @JsonProperty(value="SalarySacrifice")
     public Boolean salarySacrifice;

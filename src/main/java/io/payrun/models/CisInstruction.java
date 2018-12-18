@@ -30,13 +30,13 @@ public class CisInstruction
     public UomBasicPay uOM;
 
     @JsonProperty(value="Units")
-    public java.lang.Double units;
+    public java.math.BigDecimal units;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = 0d;;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="VAT")
-    public java.lang.Double vAT;
+    public java.math.BigDecimal vAT;
 
     @JsonProperty(value="Description")
     public String description;

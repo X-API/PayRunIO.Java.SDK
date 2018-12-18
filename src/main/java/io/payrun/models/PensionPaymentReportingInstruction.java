@@ -23,7 +23,7 @@ public class PensionPaymentReportingInstruction
     public java.lang.Short taxMonth;
 
     @JsonProperty(value="Value")
-    public java.lang.Double value = 0d;;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
 
     @JsonProperty(value="Pension")
     public Link pension;
