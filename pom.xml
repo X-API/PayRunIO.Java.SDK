@@ -6,7 +6,7 @@
 
     <groupId>io.payrun.sdk</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.7.0.SNAPSHOT</version>
+    <version>0.8.0.SNAPSHOT</version>
     <name>PayRun.io.JavaSDK</name>
     <url>https://github.com/X-API/PayRunIO.Java.SDK</url>
     <description>Java SDK for accessing the UK Payroll API - PayRun.io</description>
