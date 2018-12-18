@@ -45,6 +45,7 @@ public class SubContractor
     @JsonProperty(value="VerificationNumber")
     public String verificationNumber;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
     @JsonProperty(value="VerificationDate")
     public java.util.Date verificationDate;
 
