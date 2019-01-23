@@ -15,7 +15,7 @@ public class FixedRateLoanPayInstruction extends PayInstruction
     public String identifier;
 
     @JsonProperty(value="RepaymentRate")
-    public java.math.BigDecimal repaymentRate = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal repaymentRate = new java.math.BigDecimal(0);
 
     @JsonProperty(value="LoanAmount")
     public java.math.BigDecimal loanAmount;

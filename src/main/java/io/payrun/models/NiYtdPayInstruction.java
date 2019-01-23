@@ -9,37 +9,37 @@ public class NiYtdPayInstruction extends PayInstruction
 {
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="EmployerNI")
-    public java.math.BigDecimal employerNI = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal employerNI = new java.math.BigDecimal(0);
 
     @JsonProperty(value="NiablePay")
-    public java.math.BigDecimal niablePay = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal niablePay = new java.math.BigDecimal(0);
 
     @JsonProperty(value="NiLetter")
     public String niLetter;
 
     @JsonProperty(value="LEL")
-    public java.math.BigDecimal lEL = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal lEL = new java.math.BigDecimal(0);
 
     @JsonProperty(value="LELtoPT")
-    public java.math.BigDecimal lELtoPT = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal lELtoPT = new java.math.BigDecimal(0);
 
     @JsonProperty(value="PTtoST")
-    public java.math.BigDecimal pTtoST = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal pTtoST = new java.math.BigDecimal(0);
 
     @JsonProperty(value="STtoUST")
-    public java.math.BigDecimal sTtoUST = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal sTtoUST = new java.math.BigDecimal(0);
 
     @JsonProperty(value="STtoAUST")
-    public java.math.BigDecimal sTtoAUST = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal sTtoAUST = new java.math.BigDecimal(0);
 
     @JsonProperty(value="USTtoUEL")
-    public java.math.BigDecimal uSTtoUEL = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal uSTtoUEL = new java.math.BigDecimal(0);
 
     @JsonProperty(value="AboveUEL")
-    public java.math.BigDecimal aboveUEL = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal aboveUEL = new java.math.BigDecimal(0);
 
     @JsonProperty(value="DirCalculationMethod")
     public DirCalculationMethod dirCalculationMethod = DirCalculationMethod.Off;

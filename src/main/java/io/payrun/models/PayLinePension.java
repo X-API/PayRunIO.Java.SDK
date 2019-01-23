@@ -12,10 +12,10 @@ public class PayLinePension extends PayLine
     public PensionTaxationMethod taxationMethod = PensionTaxationMethod.NotSet;
 
     @JsonProperty(value="EmployerContribution")
-    public java.math.BigDecimal employerContribution = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal employerContribution = new java.math.BigDecimal(0);
 
     @JsonProperty(value="PensionablePay")
-    public java.math.BigDecimal pensionablePay = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal pensionablePay = new java.math.BigDecimal(0);
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="ContributionDeductionDate")

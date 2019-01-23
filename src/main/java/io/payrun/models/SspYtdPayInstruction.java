@@ -17,13 +17,13 @@ public class SspYtdPayInstruction extends PayInstruction
     public java.util.Date absenceEnd;
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="AverageWeeklyEarnings")
-    public java.math.BigDecimal averageWeeklyEarnings = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal averageWeeklyEarnings = new java.math.BigDecimal(0);
 
     @JsonProperty(value="WeeksUsed")
-    public java.math.BigDecimal weeksUsed = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal weeksUsed = new java.math.BigDecimal(0);
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;

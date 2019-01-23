@@ -12,13 +12,13 @@ public class RatePayInstruction extends PayInstruction
     public String code;
 
     @JsonProperty(value="Rate")
-    public java.math.BigDecimal rate = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal rate = new java.math.BigDecimal(0);
 
     @JsonProperty(value="RateUoM")
     public UomBasicPay rateUoM = UomBasicPay.NotSet;
 
     @JsonProperty(value="Units")
-    public java.math.BigDecimal units = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal units = new java.math.BigDecimal(0);
 
     @JsonProperty(value="RoundingOption")
     public RoundingOption roundingOption;

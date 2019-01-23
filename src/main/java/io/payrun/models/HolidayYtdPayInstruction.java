@@ -9,16 +9,16 @@ public class HolidayYtdPayInstruction extends PayInstruction
 {
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Code")
     public String code;
 
     @JsonProperty(value="UnitsAccrued")
-    public java.math.BigDecimal unitsAccrued = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal unitsAccrued = new java.math.BigDecimal(0);
 
     @JsonProperty(value="UnitsDepleted")
-    public java.math.BigDecimal unitsDepleted = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal unitsDepleted = new java.math.BigDecimal(0);
 
     @JsonProperty(value="UoM")
     public UomBasicPay uoM = UomBasicPay.NotSet;

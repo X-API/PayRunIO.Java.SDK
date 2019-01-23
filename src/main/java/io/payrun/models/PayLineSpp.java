@@ -17,10 +17,10 @@ public class PayLineSpp extends PayLine
     public java.util.Date absenceEnd;
 
     @JsonProperty(value="AverageWeeklyEarnings")
-    public java.math.BigDecimal averageWeeklyEarnings = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal averageWeeklyEarnings = new java.math.BigDecimal(0);
 
     @JsonProperty(value="WeeksUsed")
-    public java.math.BigDecimal weeksUsed = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal weeksUsed = new java.math.BigDecimal(0);
 
     @JsonProperty(value="ExclusionReason")
     public SppExclusionReason exclusionReason = SppExclusionReason.None;

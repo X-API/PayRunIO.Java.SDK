@@ -9,7 +9,7 @@ public class AoeYtdPayInstruction extends PayInstruction
 {
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="CaseNumber")
     public String caseNumber;
@@ -18,7 +18,7 @@ public class AoeYtdPayInstruction extends PayInstruction
     public String aoeType;
 
     @JsonProperty(value="Arrears")
-    public java.math.BigDecimal arrears = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal arrears = new java.math.BigDecimal(0);
 
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;

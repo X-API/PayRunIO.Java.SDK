@@ -12,10 +12,10 @@ public class BenefitYtdPayInstruction extends PayInstruction
     public String code;
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="TaxableAmount")
-    public java.math.BigDecimal taxableAmount = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal taxableAmount = new java.math.BigDecimal(0);
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;

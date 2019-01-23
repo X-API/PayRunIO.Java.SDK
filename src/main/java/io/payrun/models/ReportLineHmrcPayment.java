@@ -9,7 +9,7 @@ public class ReportLineHmrcPayment
 {
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Description")
     public String description;

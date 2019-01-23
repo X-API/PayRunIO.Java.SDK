@@ -15,7 +15,7 @@ public class NetToGrossPayInstruction extends PayInstruction
     public NetToGrossTarget calculationMode = NetToGrossTarget.NetPay;
 
     @JsonProperty(value="DesiredValue")
-    public java.math.BigDecimal desiredValue = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal desiredValue = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Units")
     public java.math.BigDecimal units;

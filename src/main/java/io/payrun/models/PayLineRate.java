@@ -9,13 +9,13 @@ public class PayLineRate extends PayLine
 {
 
     @JsonProperty(value="Rate")
-    public java.math.BigDecimal rate = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal rate = new java.math.BigDecimal(0);
 
     @JsonProperty(value="RateUoM")
     public UomBasicPay rateUoM = UomBasicPay.NotSet;
 
     @JsonProperty(value="Units")
-    public java.math.BigDecimal units = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal units = new java.math.BigDecimal(0);
 
     @JsonProperty(value="ProRataMethodApplied")
     public ProRataMethod proRataMethodApplied = ProRataMethod.NotSet;

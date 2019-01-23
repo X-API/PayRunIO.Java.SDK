@@ -9,7 +9,7 @@ public class PayLineBenefit extends PayLine
 {
 
     @JsonProperty(value="TaxableAmount")
-    public java.math.BigDecimal taxableAmount = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal taxableAmount = new java.math.BigDecimal(0);
 
     @JsonProperty(value="AccountingMethod")
     public BenefitAccountingMethod accountingMethod = BenefitAccountingMethod.P11D;

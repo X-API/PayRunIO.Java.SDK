@@ -12,5 +12,5 @@ public class PrimitivePayInstruction extends PayInstruction
     public String code;
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 }

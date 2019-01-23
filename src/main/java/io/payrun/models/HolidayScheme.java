@@ -35,10 +35,10 @@ public class HolidayScheme
     public java.lang.Short yearStartDay;
 
     @JsonProperty(value="AnnualEntitlementWeeks")
-    public java.math.BigDecimal annualEntitlementWeeks = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal annualEntitlementWeeks = new java.math.BigDecimal(0);
 
     @JsonProperty(value="MaxCarryOverDays")
-    public java.math.BigDecimal maxCarryOverDays = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal maxCarryOverDays = new java.math.BigDecimal(0);
 
     @JsonProperty(value="AllowNegativeBalance")
     public Boolean allowNegativeBalance = false;

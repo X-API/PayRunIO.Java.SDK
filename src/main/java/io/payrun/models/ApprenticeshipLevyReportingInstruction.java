@@ -23,5 +23,5 @@ public class ApprenticeshipLevyReportingInstruction
     public java.lang.Short taxMonth;
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 }

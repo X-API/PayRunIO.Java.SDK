@@ -45,10 +45,10 @@ public class CisLine
     public java.math.BigDecimal vAT;
 
     @JsonProperty(value="GrossPay")
-    public java.math.BigDecimal grossPay = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal grossPay = new java.math.BigDecimal(0);
 
     @JsonProperty(value="CisDeduction")
-    public java.math.BigDecimal cisDeduction = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal cisDeduction = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Description")
     public String description;

@@ -9,7 +9,7 @@ public class ReportLinePension
 {
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Description")
     public String description;
@@ -27,11 +27,11 @@ public class ReportLinePension
     public String pensionKey;
 
     @JsonProperty(value="EmployeeContribution")
-    public java.math.BigDecimal employeeContribution = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal employeeContribution = new java.math.BigDecimal(0);
 
     @JsonProperty(value="EmployerContribution")
-    public java.math.BigDecimal employerContribution = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal employerContribution = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Payment")
-    public java.math.BigDecimal payment = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal payment = new java.math.BigDecimal(0);
 }

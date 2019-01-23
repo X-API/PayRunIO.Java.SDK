@@ -15,5 +15,5 @@ public class PayLineTax extends PayLine
     public String taxCode;
 
     @JsonProperty(value="TaxablePay")
-    public java.math.BigDecimal taxablePay = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal taxablePay = new java.math.BigDecimal(0);
 }

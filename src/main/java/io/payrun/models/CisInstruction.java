@@ -33,7 +33,7 @@ public class CisInstruction
     public java.math.BigDecimal units;
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="VAT")
     public java.math.BigDecimal vAT;

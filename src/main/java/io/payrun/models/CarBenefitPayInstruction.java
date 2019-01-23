@@ -12,10 +12,10 @@ public class CarBenefitPayInstruction extends PayInstruction
     public String code;
 
     @JsonProperty(value="TotalCost")
-    public java.math.BigDecimal totalCost = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal totalCost = new java.math.BigDecimal(0);
 
     @JsonProperty(value="EmployeeContribution")
-    public java.math.BigDecimal employeeContribution = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal employeeContribution = new java.math.BigDecimal(0);
 
     @JsonProperty(value="CashEquivalent")
     public java.math.BigDecimal cashEquivalent;
@@ -44,7 +44,7 @@ public class CarBenefitPayInstruction extends PayInstruction
     public java.util.Date dateRegistered;
 
     @JsonProperty(value="EmployeeContributionPrivateUse")
-    public java.math.BigDecimal employeeContributionPrivateUse = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal employeeContributionPrivateUse = new java.math.BigDecimal(0);
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="FuelProvidedFrom")

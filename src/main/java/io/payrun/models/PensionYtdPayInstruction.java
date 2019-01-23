@@ -9,13 +9,13 @@ public class PensionYtdPayInstruction extends PayInstruction
 {
 
     @JsonProperty(value="PensionablePay")
-    public java.math.BigDecimal pensionablePay = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal pensionablePay = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="EmployerContribution")
-    public java.math.BigDecimal employerContribution = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal employerContribution = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Code")
     public String code;

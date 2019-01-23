@@ -9,7 +9,7 @@ public class ReportLineTaxSummary
 {
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="Description")
     public String description;
@@ -24,23 +24,23 @@ public class ReportLineTaxSummary
     public java.lang.Short taxMonth;
 
     @JsonProperty(value="GrossNetPay")
-    public java.math.BigDecimal grossNetPay = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal grossNetPay = new java.math.BigDecimal(0);
 
     @JsonProperty(value="GrossNiablePay")
-    public java.math.BigDecimal grossNiablePay = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal grossNiablePay = new java.math.BigDecimal(0);
 
     @JsonProperty(value="GrossEmployerNI")
-    public java.math.BigDecimal grossEmployerNI = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal grossEmployerNI = new java.math.BigDecimal(0);
 
     @JsonProperty(value="GrossEmployeeNI")
-    public java.math.BigDecimal grossEmployeeNI = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal grossEmployeeNI = new java.math.BigDecimal(0);
 
     @JsonProperty(value="GrossTaxablePay")
-    public java.math.BigDecimal grossTaxablePay = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal grossTaxablePay = new java.math.BigDecimal(0);
 
     @JsonProperty(value="GrossTax")
-    public java.math.BigDecimal grossTax = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal grossTax = new java.math.BigDecimal(0);
 
     @JsonProperty(value="StudentLoan")
-    public java.math.BigDecimal studentLoan = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal studentLoan = new java.math.BigDecimal(0);
 }

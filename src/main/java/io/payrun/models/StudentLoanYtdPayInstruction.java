@@ -9,7 +9,7 @@ public class StudentLoanYtdPayInstruction extends PayInstruction
 {
 
     @JsonProperty(value="Value")
-    public java.math.BigDecimal value = new java.math.BigDecimal(0);;
+    public java.math.BigDecimal value = new java.math.BigDecimal(0);
 
     @JsonProperty(value="StudentLoanCalculationMethod")
     public StudentLoanCalculationMethod studentLoanCalculationMethod = StudentLoanCalculationMethod.Off;
