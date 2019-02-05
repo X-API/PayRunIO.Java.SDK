@@ -14,6 +14,7 @@ public class ReportLineTaxSummary
     @JsonProperty(value="Description")
     public String description;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
     @JsonProperty(value="Generated")
     public java.util.Date generated;
 
@@ -43,4 +44,7 @@ public class ReportLineTaxSummary
 
     @JsonProperty(value="StudentLoan")
     public java.math.BigDecimal studentLoan = new java.math.BigDecimal(0);
+
+    @JsonProperty(value="PostGraduateLoan")
+    public java.math.BigDecimal postGraduateLoan = new java.math.BigDecimal(0);
 }

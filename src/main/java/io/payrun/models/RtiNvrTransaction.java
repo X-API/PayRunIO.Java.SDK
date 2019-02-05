@@ -17,6 +17,7 @@ public class RtiNvrTransaction
     @JsonProperty(value="Timestamp")
     public java.util.Date timestamp;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="TransmissionDate")
     public java.util.Date transmissionDate;
 

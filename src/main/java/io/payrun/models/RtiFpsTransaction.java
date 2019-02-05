@@ -17,6 +17,7 @@ public class RtiFpsTransaction
     @JsonProperty(value="Timestamp")
     public java.util.Date timestamp;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="TransmissionDate")
     public java.util.Date transmissionDate;
 
@@ -35,9 +36,11 @@ public class RtiFpsTransaction
     @JsonProperty(value="PaySchedule")
     public Link paySchedule;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="PaymentDate")
     public java.util.Date paymentDate;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="SchemeCeased")
     public java.util.Date schemeCeased;
 

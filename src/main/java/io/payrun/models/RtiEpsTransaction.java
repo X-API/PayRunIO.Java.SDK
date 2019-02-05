@@ -17,6 +17,7 @@ public class RtiEpsTransaction
     @JsonProperty(value="Timestamp")
     public java.util.Date timestamp;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="TransmissionDate")
     public java.util.Date transmissionDate;
 
@@ -32,21 +33,26 @@ public class RtiEpsTransaction
     @JsonProperty(value="EmployerCore")
     public Link employerCore;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="SchemeCeased")
     public java.util.Date schemeCeased;
 
     @JsonProperty(value="TaxMonth")
     public java.lang.Short taxMonth;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="NoPaymentForPeriodFrom")
     public java.util.Date noPaymentForPeriodFrom;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="NoPaymentForPeriodTo")
     public java.util.Date noPaymentForPeriodTo;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="PeriodOfInactivityFrom")
     public java.util.Date periodOfInactivityFrom;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="PeriodOfInactivityTo")
     public java.util.Date periodOfInactivityTo;
 
