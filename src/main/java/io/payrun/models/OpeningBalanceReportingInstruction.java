@@ -34,6 +34,9 @@ public class OpeningBalanceReportingInstruction
     @JsonProperty(value="StudentLoan")
     public java.math.BigDecimal studentLoan = new java.math.BigDecimal(0);
 
+    @JsonProperty(value="PostGraduateLoan")
+    public java.math.BigDecimal postGraduateLoan = new java.math.BigDecimal(0);
+
     @JsonProperty(value="EmployerNI")
     public java.math.BigDecimal employerNI = new java.math.BigDecimal(0);
 
