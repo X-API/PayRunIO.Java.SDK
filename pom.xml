@@ -72,7 +72,7 @@
     </properties>
 
     <build>
-        <finalName>io.payrun.sdk_v${project.version}</finalName>
+        <finalName>io.payrun.sdk_v${version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
