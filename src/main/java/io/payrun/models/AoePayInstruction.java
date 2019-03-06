@@ -45,4 +45,7 @@ public class AoePayInstruction extends PayInstruction
 
     @JsonProperty(value="DeductionPercentage")
     public java.math.BigDecimal deductionPercentage;
+
+    @JsonProperty(value="BeneficiaryBankAccount")
+    public BankAccount beneficiaryBankAccount;
 }

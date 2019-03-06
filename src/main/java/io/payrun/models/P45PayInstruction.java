@@ -24,7 +24,7 @@ public class P45PayInstruction extends PayInstruction
     public StudentLoanCalculationMethod studentLoan = StudentLoanCalculationMethod.Off;
 
     @JsonProperty(value="PayFrequency")
-    public PayFrequency payFrequency = PayFrequency.Weekly;
+    public PayFrequency payFrequency;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="LeavingDate")
