@@ -20,6 +20,9 @@ public class AoeYtdPayInstruction extends PayInstruction
     @JsonProperty(value="Arrears")
     public java.math.BigDecimal arrears = new java.math.BigDecimal(0);
 
+    @JsonProperty(value="ArrestablePay")
+    public java.math.BigDecimal arrestablePay = new java.math.BigDecimal(0);
+
     @JsonProperty(value="IsAdjustment")
     public Boolean isAdjustment = false;
 }
