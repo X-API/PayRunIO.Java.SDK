@@ -78,6 +78,9 @@ public class Pension
     @JsonProperty(value="QualifyingPayCodes")
     public qualifyingPayCodesWrapper qualifyingPayCodes;
 
+    @JsonProperty(value="MetaData")
+    public MetaData metaData;
+
     public Pension(){
         this.pensionablePayCodes = new pensionablePayCodesWrapper();
         this.pensionablePayCodes.instance = new java.util.ArrayList<>();

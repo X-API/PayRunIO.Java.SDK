@@ -50,4 +50,7 @@ public class Employer
 
     @JsonProperty(value="AutoEnrolment")
     public EmployerAutoEnrolment autoEnrolment;
+
+    @JsonProperty(value="MetaData")
+    public MetaData metaData;
 }

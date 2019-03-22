@@ -96,4 +96,7 @@ public class SubContractor
 
     @JsonProperty(value="BankAccount")
     public BankAccount bankAccount;
+
+    @JsonProperty(value="MetaData")
+    public MetaData metaData;
 }

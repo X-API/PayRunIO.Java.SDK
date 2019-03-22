@@ -134,4 +134,7 @@ public class Employee
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @JsonProperty(value="AEPostponementDate")
     public java.util.Date aEPostponementDate;
+
+    @JsonProperty(value="MetaData")
+    public MetaData metaData;
 }
